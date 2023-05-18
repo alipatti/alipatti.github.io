@@ -1,0 +1,122 @@
+\documentclass{ali-resume}
+
+\author{Alistair Pattison}
+\title{
+    (651) 706-6713 $\quad\mid\quad$
+    {pattisona@carleton.edu}
+    % $\quad\mid\quad$ \href{http://alipatti.com}{alipatti.com}
+}
+
+\begin{document}
+
+\maketitle
+
+\section{Education}
+
+\resumeitem{Bachelors of Arts, Mathematics \& Statistics}
+{Carleton College}
+{September 2020 – June 2024}
+
+\begin{itemize}
+	\item 3.99 GPA, Dean's List, National Merit Scholarship, public policy minor, digital arts and humanities minor.
+	\item Studied abroad at the University of Cambridge taking classes in cryptography, WWII history, and the history of computing.
+	\item Member of varsity cross-country and track \& field. Three-time conference finalist, all-conference honorable mention.
+	      % \item {Senior theses}: \href{http://}{\itshape A Rigorous Derivation of Quantum Mechanics} and \href{http://}{\itshape Accurate Conversion of Track and Field Marks}.
+\end{itemize}
+
+% \resumeitem{Talented Youth Mathematics Program}
+% {University of Minnesota}
+% {2015 – 2020}
+
+% \begin{itemize}
+% 	\item Completed selective high-school math program culminating in six semesters of linear algebra, vector calculus, differential equations, and set theory.
+% \end{itemize}
+
+\section{Work Experience}
+
+% \resumeitem{Statistical Consultant}{Some nonprofit group}{September 2023 – present}
+
+% \begin{itemize}
+% 	\item TODO
+% \end{itemize}
+
+\resumeitem{Teaching Assistant}
+{Carleton College}
+{March 2021 – present}
+
+\begin{itemize}
+	\item Tutor students and hold office hours for classes in the math and computer science departments.
+	\item Collaborate with the professor to establish clear grading guidelines, write code tests, and grade homework.
+	\item Classes include
+	      %   Real Analysis I (MATH 321),
+	      %   Abstract Algebra I (MATH 342),
+	      Data Visualization (CS 314),
+	      Artificial Intelligence (CS 321),
+	      Algorithms (CS 252),
+	      Math Structures (MATH 236),
+	      and Calculus II (MATH 120).
+\end{itemize}
+
+\resumeitem{Research Assistant}
+{University of Minnesota}
+{September 2022 – August 2023}
+
+\begin{itemize}
+	\item
+	      Developed a cryptographic protocol in which the sender of an encrypted message can be verified if there is sufficient agreement among a group of moderators.
+	      The protocol retains all security properties for messages that aren't reported.
+	\item Implemented the protocol using Rust and Docker to estimate the cost of widespread adoption.
+	\item Presented at the 2023 IEEE Symposium on Security and Privacy (%
+	      \href{https://github.com/alipatti/cerberus/blob/master/poster/poster.pdf}{poster}).
+\end{itemize}
+
+\resumeitem{The Food Guy}
+{YMCA Camp Widjiwagan}
+{June – September 2021}
+
+\begin{itemize}
+	\item Personally managed the purchase and distribution of food for nearly 200 wilderness trips across the US and Canada.
+	\item Oversaw a \$95,000 budget in collaboration with two other employees.
+	\item Lead a week-long canoeing trip with Boys Outdoor Leadership Development, a program dedicated to making the outdoors more diverse and financially accessible.
+\end{itemize}
+
+\resumeitem{Dining Hall Worker}
+{Carleton College}
+{September 2020 – March 2021}
+
+\resumeitem{Farm Hand}
+{Hansen Christmas Tree Farm}
+{November 2018 – December 2021}
+
+\null % add a little extra space
+
+\section{Projects}
+
+\newcommand{\project}[2]{%
+	\subsection{#1
+		\hfill
+		\normalfont \small \faicon{github}
+		\href{http://github.com/alipatti/#2}{\textit{alipatti/#2}}
+	}}
+
+\project{Ole or Carl?}{oleorcarl}
+
+\begin{itemize}
+	\item This project tests the validity of a long-standing stereotype that students from Northfield's two colleges look meaningfully different. If they are, then a machine learning model should be able to tell them apart? Right?
+	\item Uses a SVM classifier on state-of-the-art vector embeddings of student's directory photos.
+\end{itemize}
+
+\project{Carleton Course Classifier}{course-classifier}
+
+\begin{itemize}
+	\item A Tensorflow natural-language model that predicts the department and course number of a course given its description. \item Achieves 64\% accuracy in a 54-class classification problem using a CNN and deep word embeddings.
+	      %   TODO    
+	      %  A human (me) gets about ??? percent.
+\end{itemize}
+
+\section{Skills}
+
+\textbf{Programming:}
+Python (numpy, pandas, tensorflow, sklearn, matplotlib), R (tidyverse, ggplot2), JavaScript (TypeScript, React, Next.js, d3.js), \LaTeX, Rust, Java, SQL, git, Docker.
+
+\end{document}

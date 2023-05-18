@@ -1,0 +1,7 @@
+{
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "explorer.fileNesting.patterns": {
+    "package.json": "yarn.lock, package-lock.json, .eslintrc.json, next.config.js, postcss.config.js, tailwind.config.js, tsconfig.json, next-env.d.ts"
+  }
+}

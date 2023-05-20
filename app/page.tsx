@@ -9,22 +9,22 @@ export default function Home() {
 
       <section className="flex flex-col items-center gap-10 lg:flex-row">
         <Image
-          title="Me in Giza."
           className="aspect-square rounded-full object-cover object-left-top"
           src={"/photos/me.jpeg"}
-          alt="Me in Giza."
+          alt="Dashing gentleman man overlooks valley in the Austrian alps."
           height={280}
           width={280}
         ></Image>
         <div>
           <p id="about" className="">
-            I'm Alistair, a student studying math and statistics at Carleton
-            College. Recently, I've worked as a research assistant in the
+            I'm Alistair, a students at Carleton College studying math and
+            statistics. Recently, I've worked as a research assistant in the
             Privacy and Cryptography lab at the University of Minnesota, as a
-            statistical consultant for ????, and as a teaching assistant for a
-            variety of math and computer science classes. Outside of math and
-            stats, I'm interested in artificial intelligence, evolutionary
-            biology, and physics. Outside of school, I am an{" "}
+            statistical consultant for ????, and as a teaching assistant for
+            classes on real analysis, abstract algebra, algorithms, artificial
+            intelligence, and data visualization. Outside of math and stats, I'm
+            interested in artificial intelligence, evolutionary biology, and
+            physics. Outside of school, I am an{" "}
             <a
               href="https://athletics.carleton.edu/news/2023/2/11/mens-track-and-field-knights-win-7-times-at-the-meet-of-the-hearts.aspx"
               target="_blank"
@@ -36,20 +36,20 @@ export default function Home() {
               coder
             </a>
             {", "}
-            <Link href="/photos/wilmore.jpeg">nature enthusiast</Link>
+            <Link href="/photos/wilmore.jpg">nature enthusiast</Link>
             {", "}
             <a href="https://github.com/alipatti/dotfiles" target="_blank">
               chronic bikeshedder
             </a>
             {", "}
-            and pickup sport extraordinaire.
+            proud midwesterner, and pickup sport extraordinaire.
           </p>
         </div>
       </section>
 
       <section
         id="links"
-        className="px-auto flex flex-wrap items-center justify-center gap-10 children:rounded children:bg-fuchsia-300 children:px-3 children:py-2"
+        className="px-auto text-gray flex flex-wrap items-center justify-center gap-10 children:rounded children:bg-[#7C4C5C] children:px-3 children:py-2"
       >
         <a className="hover:shadow" href="https://github.com/alipatti">
           <FaGithub className="inline" /> <span className="pl-2">github</span>
@@ -58,17 +58,10 @@ export default function Home() {
           <FaLinkedin className="inline" />{" "}
           <span className="pl-2">linkedin</span>
         </a>
-        <a className="hover:shadow " href="/resume/resume.pdf">
+        <a className="hover:shadow " href="/resume.pdf">
           <FaFile className="inline" /> <span className="pl-2">resume</span>
         </a>
       </section>
-
-      {/* <section id="resume" className="hidden lg:block">
-        <iframe
-          src="/resume/resume.pdf#toolbar=0"
-          className="mx-auto aspect-[8.5/11] w-full max-w-2xl"
-        ></iframe>
-      </section> */}
     </div>
   );
 }

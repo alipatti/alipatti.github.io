@@ -3,8 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build"
+    "dev": "yarn next dev",
+    "build": "yarn next build",
+    "clean": "rm -rf .next node_modules out"
   },
   "dependencies": {
     "@types/node": "20.2.1",

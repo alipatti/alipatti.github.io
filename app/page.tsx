@@ -21,7 +21,7 @@ export default function Home() {
             statistics. Recently, I've worked as a research assistant in the
             Privacy and Cryptography lab at the University of Minnesota and as a
             teaching assistant for the math and computer science departments at
-            Carleton. I have an{" "}
+            Carleton. My{" "}
             <a href="https://link.springer.com/article/10.1007/BF02187731">
               Erdös
             </a>{" "}
@@ -29,7 +29,7 @@ export default function Home() {
               number
             </a>{" "}
             <a href="https://link.springer.com/chapter/10.1007/3-540-39200-9_18">
-              of
+              is
             </a>{" "}
             <a href="TODO: add arXiv link">four</a>, and my other academic
             interests include artificial intelligence, evolutionary biology, and

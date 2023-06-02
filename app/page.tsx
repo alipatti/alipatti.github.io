@@ -17,13 +17,22 @@ export default function Home() {
         ></Image>
         <div>
           <p id="about" className="">
-            I'm Alistair, a students at Carleton College studying math and
+            I'm Alistair, a student at Carleton College studying math and
             statistics. Recently, I've worked as a research assistant in the
-            Privacy and Cryptography lab at the University of Minnesota, as a
-            statistical consultant for ????, and as a teaching assistant for
-            classes on real analysis, abstract algebra, algorithms, artificial
-            intelligence, and data visualization. Outside of math and stats, I'm
-            interested in artificial intelligence, evolutionary biology, and
+            Privacy and Cryptography lab at the University of Minnesota and as a
+            teaching assistant for the math and computer science departments at
+            Carleton. I have an{" "}
+            <a href="https://link.springer.com/article/10.1007/BF02187731">
+              Erdös
+            </a>{" "}
+            <a href="https://collaborate.princeton.edu/en/publications/matching-nuts-and-bolts">
+              number
+            </a>{" "}
+            <a href="https://link.springer.com/chapter/10.1007/3-540-39200-9_18">
+              of
+            </a>{" "}
+            <a href="TODO: add arXiv link">four</a>, and my other academic
+            interests include artificial intelligence, evolutionary biology, and
             physics. Outside of school, I am an{" "}
             <a
               href="https://athletics.carleton.edu/news/2023/2/11/mens-track-and-field-knights-win-7-times-at-the-meet-of-the-hearts.aspx"
@@ -36,7 +45,9 @@ export default function Home() {
               coder
             </a>
             {", "}
-            <Link href="/photos/wilmore.jpg">nature enthusiast</Link>
+            <Link href="/photos/wilmore.jpg" target="_blank">
+              nature enthusiast
+            </Link>
             {", "}
             <a href="https://github.com/alipatti/dotfiles" target="_blank">
               chronic bikeshedder
@@ -49,7 +60,7 @@ export default function Home() {
 
       <section
         id="links"
-        className="px-auto text-gray flex flex-wrap items-center justify-center gap-10 children:rounded children:bg-[#7C4C5C] children:px-3 children:py-2"
+        className="px-auto flex flex-wrap items-center justify-center gap-10 text-gray-200 children:rounded children:bg-[#7C4C5C] children:px-3 children:py-2"
       >
         <a className="hover:shadow" href="https://github.com/alipatti">
           <FaGithub className="inline" /> <span className="pl-2">github</span>
@@ -62,6 +73,10 @@ export default function Home() {
           <FaFile className="inline" /> <span className="pl-2">resume</span>
         </a>
       </section>
+
+      <section id="github"></section>
     </div>
   );
 }
+
+const getRepos = () => {};

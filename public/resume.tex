@@ -2,10 +2,14 @@
 
 \author{Alistair Pattison}
 \title{
-    (651) 706-6713 $\quad\mid\quad$
-    {pattisona@carleton.edu}
-    % $\quad\mid\quad$ \href{http://alipatti.com}{alipatti.com}
+    {\it (651) 706-6713}
+    \ | \ 
+    {\it pattisona@carleton.edu}
+    \ | \ 
+    \href{http://alipatti.com}{\it alipatti.com}
 }
+
+\addbibresource{publications.bib}
 
 \begin{document}
 
@@ -15,18 +19,17 @@
 
 \resumeitem{Bachelors of Arts, Mathematics \& Statistics}
 {Carleton College}
-{September 2020 – June 2024}
+{September 2020 -- June 2024}
 
 \begin{itemize}
-	\item 3.99 GPA, Dean's List, National Merit Scholarship, public policy minor, digital arts and humanities minor.
+	\item 3.99 GPA, Dean's List every possible term.
+	\item Captain of varsity track and field, three-time MIAC conference finalist, two-time all-conference honorable mention.
 	\item Studied abroad at the University of Cambridge taking classes in cryptography, WWII history, and the history of computing.
-	\item Member of varsity cross-country and track \& field. Three-time conference finalist, all-conference honorable mention.
-	      % \item {Senior theses}: \href{http://}{\itshape A Rigorous Derivation of Quantum Mechanics} and \href{http://}{\itshape Accurate Conversion of Track and Field Marks}.
 \end{itemize}
 
 % \resumeitem{Talented Youth Mathematics Program}
 % {University of Minnesota}
-% {2015 – 2020}
+% {2015 -- 2020}
 
 % \begin{itemize}
 % 	\item Completed selective high-school math program culminating in six semesters of linear algebra, vector calculus, differential equations, and set theory.
@@ -34,7 +37,7 @@
 
 \section{Work Experience}
 
-% \resumeitem{Statistical Consultant}{Some nonprofit group}{September 2023 – present}
+% \resumeitem{Statistical Consultant}{Some nonprofit group}{September 2023 -- present}
 
 % \begin{itemize}
 % 	\item TODO
@@ -42,53 +45,65 @@
 
 \resumeitem{Teaching Assistant}
 {Carleton College}
-{March 2021 – present}
+{March 2021 -- present}
 
 \begin{itemize}
 	\item Tutor students and hold office hours for classes in the math and computer science departments.
-	\item Collaborate with the professor to establish clear grading guidelines, write code tests, and grade homework.
+	\item Work closely with the professor to establish clear grading guidelines and adjust curriculum to better serve students.
 	\item Classes include
-	      %   Real Analysis I (MATH 321),
-	      %   Abstract Algebra I (MATH 342),
-	      Data Visualization (CS 314),
-	      Artificial Intelligence (CS 321),
-	      Algorithms (CS 252),
-	      Math Structures (MATH 236),
-	      and Calculus II (MATH 120).
+	      real analysis, % (MATH 321),
+	      abstract algebra, % (MATH 342),
+	      data visualization, % (CS 314),
+	      artificial intelligence, % (CS 321),
+	      algorithms, % (CS 252),
+	      and math structures, % (MATH 236),
+	      %   and calculus. % (MATH 120).
 \end{itemize}
 
 \resumeitem{Research Assistant}
 {University of Minnesota}
-{September 2022 – August 2023}
+{September 2022 -- August 2023}
 
 \begin{itemize}
 	\item
-	      Developed a cryptographic protocol in which the sender of an encrypted message can be verified if there is sufficient agreement among a group of moderators.
-	      The protocol retains all security properties for messages that aren't reported.
-	\item Implemented the protocol using Rust and Docker to estimate the cost of widespread adoption.
-	\item Presented at the 2023 IEEE Symposium on Security and Privacy (%
-	      \href{https://github.com/alipatti/cerberus/blob/master/poster/poster.pdf}{poster}).
+	      Developed a cryptographic protocol in which the sender of an encrypted message can be identified if there is sufficient agreement among a group of moderators.
+	      The protocol retains nearly all security properties of the encrypted messaging system (e.g. on WhatsApp or Signal).
+	\item Wrote a proof-of-concept implementation in Rust to estimate the cost of widespread adoption.
+	\item Presented at the 2023 IEEE Symposium on Security and Privacy with professor Nicholas Hopper.
 \end{itemize}
 
 \resumeitem{The Food Guy}
 {YMCA Camp Widjiwagan}
-{June – September 2021}
+{June -- September 2021}
 
 \begin{itemize}
 	\item Personally managed the purchase and distribution of food for nearly 200 wilderness trips across the US and Canada.
-	\item Oversaw a \$95,000 budget in collaboration with two other employees.
-	\item Lead a week-long canoeing trip with Boys Outdoor Leadership Development, a program dedicated to making the outdoors more diverse and financially accessible.
+	\item Oversaw a \$95,000 budget alongside two other employees.
+	\item Lead a week-long canoeing trip with BOLD, a program dedicated to making the outdoors more diverse and accessible.
 \end{itemize}
 
 \resumeitem{Dining Hall Worker}
 {Carleton College}
-{September 2020 – March 2021}
+{September 2020 -- March 2021}
 
 \resumeitem{Farm Hand}
 {Hansen Christmas Tree Farm}
-{November 2018 – December 2021}
+{November 2018 -- December 2021}
 
-\null % add a little extra space
+\null
+
+\section{Publications}
+
+% TODO add url: (will appear at https://arxiv.org/user/)
+\fullcite{cerberus}
+
+\section{Awards}
+
+\textit{Phi Beta Kappa} -- One of nine Carleton juniors inducted into national honors society on the basis of academic merit.
+
+\textit{National Merit Scholarship} -- Competitive scholarship provides four years of partial financial support for undergraduate study.
+
+\textit{James F. Koehler Scholarship} -- Endowed scholarship given to a math major at Carleton.
 
 \section{Projects}
 
@@ -103,7 +118,7 @@
 
 \begin{itemize}
 	\item This project tests the validity of a long-standing stereotype that students from Northfield's two colleges look meaningfully different. If they are, then a machine learning model should be able to tell them apart? Right?
-	\item Uses a SVM classifier on state-of-the-art vector embeddings of student's directory photos.
+	\item Uses a SVM classifier on face-based vector embeddings of student's directory photos.
 \end{itemize}
 
 \project{Carleton Course Classifier}{course-classifier}

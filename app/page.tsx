@@ -15,13 +15,12 @@ export default function Home() {
           width={280}
         ></Image>
         <div>
-          <p id="about" className="">
+          <p id="about" className="text-center">
             I'm Alistair, a undergrad at Carleton College studying math,
             statistics, and computer science. Recently, I've worked as a
-            researcher in the Privacy and Cryptography lab at the University of
-            Minnesota, where my work has focused on using tools from cryptography to
-            develop ways of moderateing encrypted messaging platforms while
-            respecting users' anonymity and privacy. My{" "}
+            researcher at the University of Minnesota, using tools from
+            cryptography to develop a privacy-preserving method for reporting
+            abuse and misinformation on encrypted messaging platforms. My{" "}
             <a href="https://link.springer.com/article/10.1007/BF02187731">
               Erdös
             </a>{" "}
@@ -34,31 +33,43 @@ export default function Home() {
             <a href="https://arxiv.org/abs/2306.01241">four.</a>
           </p>
 
-          <p>
-            Outside of school, I am a captain of Carleton's{" "}
-            <a
-              href="https://athletics.carleton.edu/news/2023/2/11/mens-track-and-field-knights-win-7-times-at-the-meet-of-the-hearts.aspx"
-              target="_blank"
-            >
-              track and field team
-            </a>
-            {", "}
-            <a href="https://github.com/alipatti" target="_blank">
-              an avid coder
-            </a>
-            {", "}nature enthusiast,{" "}
-            <a href="https://github.com/alipatti/dotfiles" target="_blank">
-              chronic bikeshedder
-            </a>
-            {", "}
-            proud midwesterner, and pickup sport extraordinaire.
-          </p>
+          <p className="mb-0">Other interests:</p>
+
+          <ul className="list-inside list-disc columns-2 pl-2">
+            <li>
+              <a href="https://athletics.carleton.edu/news/2023/2/11/mens-track-and-field-knights-win-7-times-at-the-meet-of-the-hearts.aspx">
+                running{" "}
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/alipatti">
+                unfinished coding projects
+              </a>
+            </li>
+            <li>
+              <a href="/photos/wilmore.jpg">being outside</a>
+            </li>
+            <li>
+              <a href="https://observablehq.com/@alipatti/in-passing">
+                data visualization
+              </a>
+            </li>
+            <li>
+              <a href="https://www.startribune.com/minnesota-winter-weather-temperature-cold-north-pole/600114153/">
+                the midwest
+              </a>
+            </li>
+            <li>
+              <a href="http://github.com/alipatti/dotfiles">bikeshedding</a>
+            </li>
+            <li>pickup sports of any kind</li>
+          </ul>
         </div>
       </section>
 
       <section
         id="links"
-        className="px-auto flex flex-wrap items-center justify-center gap-10 text-gray-200 children:rounded children:bg-[#7C4C5C] children:px-3 children:py-2"
+        className="px-auto children:rounded children:bg-[#7C4C5C] children:px-3 children:py-2 flex flex-wrap items-center justify-center gap-10 text-gray-200"
       >
         <a className="hover:shadow" href="https://github.com/alipatti">
           <FaGithub className="inline" /> <span className="pl-2">github</span>
@@ -68,7 +79,7 @@ export default function Home() {
           <span className="pl-2">linkedin</span>
         </a>
         <a className="hover:shadow " href="/resume.pdf">
-          <FaFile className="inline" /> <span className="pl-2">resume</span>
+          <FaFile className="inline" /> <span className="pl-2">cv</span>
         </a>
       </section>
 
@@ -76,5 +87,3 @@ export default function Home() {
     </div>
   );
 }
-
-const getRepos = () => { };

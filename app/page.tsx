@@ -30,7 +30,7 @@ export default function Home() {
             <FaLinkedin className="inline" />{" "}
             <span className="pl-2">linkedin</span>
           </a>
-          <a className="hover:shadow " href="/resume.pdf">
+          <a className="hover:shadow " href="/cv.pdf">
             <FaFile className="inline" /> <span className="pl-2">cv</span>
           </a>
         </section>

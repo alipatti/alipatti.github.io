@@ -4,7 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "yarn next dev",
+    "prebuild" : "cp cv/cv.pdf public/cv.pdf",
     "build": "yarn next build",
+    "postbuild" : "rm public/cv.pdf",
     "clean": "rm -rf .next node_modules out"
   },
   "dependencies": {

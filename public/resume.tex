@@ -22,18 +22,20 @@
 {September 2020 -- June 2024}
 
 \begin{itemize}
-	\item 3.99 GPA, Dean's List every possible term.
-	\item Captain of varsity track and field, three-time MIAC conference finalist, two-time all-conference honorable mention.
+	\item 3.99 GPA, captain of varsity track and field.
 	\item Studied abroad at the University of Cambridge taking classes in cryptography, WWII history, and the history of computing.
+	\item Math coursework in algebra, analysis, combinatorics, and analytic number theory.
+	\item Computer science coursework in algorithms, cryptography, artificial intelligence, and quantum computing.
+	\item Statistics coursework in probability, regression, time-series analysis, data science, and data visualization.
 \end{itemize}
 
-\resumeitem{Talented Youth Mathematics Program}
-{University of Minnesota}
-{2015 -- 2020}
-
-\begin{itemize}
-	\item Completed selective high-school math program culminating in six semesters of set theory, vector calculus, linear algebra, and differential equations.
-\end{itemize}
+% \resumeitem{Talented Youth Mathematics Program}
+% {University of Minnesota}
+% {2015 -- 2020}
+%
+% \begin{itemize}
+% 	\item Completed selective high-school math program culminating in six semesters of set theory, vector calculus, linear algebra, and differential equations.
+% \end{itemize}
 
 \section{Work Experience}
 
@@ -48,9 +50,9 @@
 {September 2022 -- August 2023}
 
 \begin{itemize}
-	\item Researched and developed a method for reporting abuse and misinformation on encrypted messaging platforms (e.g. WhatsApp or Signal) that provably maintains users' anonymity and privacy.
-	\item Presented findings at a leading, peer-reviewed security conference and gave talks at weekly lab seminars.
-	\item Wrote and benchmarked a proof-of-concept \href{http://github.com/alipatti/cerberus}{implementation of the protocol in Rust}.
+	\item Developed a method for reporting abuse on encrypted messaging platforms that provably maintains privacy until certain thresholds are met, e.g., if a user is reported enough times or by enough people.
+	\item Wrote and benchmarked a proof-of-concept implementation in Rust.
+	\item Presented findings at a peer-reviewed security conference and gave talks at weekly lab seminars.
 \end{itemize}
 
 \resumeitem{Teaching Assistant}
@@ -60,13 +62,13 @@
 \begin{itemize}
 	\item Tutor students, grade homework, and hold office hours for classes in the math and computer science departments.
 	\item Classes include
+	      algorithms, % (CS 252),
 	      real analysis, % (MATH 321),
 	      abstract algebra, % (MATH 342),
 	      data visualization, % (CS 314),
 	      artificial intelligence, % (CS 321),
-	      algorithms, % (CS 252),
-	      and math structures. % (MATH 236),
-	      %   and calculus. % (MATH 120).
+	      and calculus. % (MATH 120),
+	      %   and math structures. % (MATH 236).
 \end{itemize}
 
 \resumeitem{The Food Guy}
@@ -74,8 +76,8 @@
 {June -- September 2021}
 
 \begin{itemize}
-	\item Individually managed the purchase and distribution of food for nearly 200 wilderness trips across the US and Canada.
-	\item Oversaw a \$95,000 budget alongside two other employees and taught basic nutrition to kids aged 12 to 18.
+	\item Oversaw the purchase and distribution of food for nearly 200 wilderness trips across the US and Canada.
+	\item Managed a \$95,000 budget alongside two other employees and taught basic nutrition to kids aged 12 to 18.
 	\item Lead a week-long canoeing trip with BOLD, a program dedicated to making the outdoors more diverse and accessible.
 \end{itemize}
 
@@ -83,13 +85,13 @@
 {Carleton College}
 {September 2020 -- March 2021}
 
-\resumeitem{Farm Hand}
-{Hansen Tree Farm}
-{2018 -- 2021}
+% \resumeitem{Farm Hand}
+% {Hansen Tree Farm}
+% {2018 -- 2021}
 
-\resumeitem{Owner}
-{Pattison Lawn Care}
-{2015 -- 2020}
+% \resumeitem{Owner}
+% {Pattison Lawn Care}
+% {2015 -- 2020}
 
 \null
 
@@ -100,11 +102,14 @@
 
 \section{Awards}
 
-\textit{Phi Beta Kappa} -- One of nine Carleton juniors ($\sim 2\%$ of the class) inducted into national honors society.
+\newcommand{\award}[2]{\textbf{#1}, \textit{#2}}
 
-\textit{National Merit Scholarship} -- Competitive scholarship provides four years of financial support for undergraduate study.
-
-\textit{James F. Koehler Scholarship} -- Endowed scholarship given to a Carleton math major.
+\begin{itemize}[label={}, leftmargin=0em]
+	\item \award{Phi Beta Kappa}{2023}
+	\item \award{Dean's List}{2023, 2022, 2021}
+	\item \award{James F. Koehler Scholarship}{2022}
+	\item \award{National Merit Scholarship}{2020}
+\end{itemize}
 
 \section{Projects}
 
@@ -129,6 +134,18 @@
 	\item Achieves 64\% accuracy in a 54-class problem using a neural net and the Stanford GloVe embeddings.
 \end{itemize}
 
+\project{Wordle Bot}{wordle-bot}
+
+\begin{itemize}
+	\item A NumPy implementation, of 3Blue1Brown's information-theoretic Wordle bot, with a few performance improvements.
+\end{itemize}
+
+\project{In Passing}{in-passing}
+
+\begin{itemize}
+	\item A visualization of passing and touch data from the 2022 FIFA Men's World Cup, built with d3.js.
+\end{itemize}
+
 \section{Skills}
 
 \textbf{Programming:} Python, R, JavaScript, \LaTeX, Rust, Java, SQL, git, Docker.
@@ -141,6 +158,6 @@
 
 \textbf{Data Visualization:} ggplot2, matplotlib, d3.js.
 
-\textbf{Writing:} adept at writing for many different audiences.
+% \textbf{Writing:} adept at writing for many different audiences.
 
 \end{document}

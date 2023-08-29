@@ -18,23 +18,6 @@ export default function Home() {
           ></Image>
         </section>
 
-        {/* Links */}
-        <section
-          id="links"
-          className="px-auto children:rounded children:bg-[#7C4C5C] children:px-3 children:py-2 flex flex-wrap items-center justify-center gap-10 text-gray-200"
-        >
-          <a className="hover:shadow" href="https://github.com/alipatti">
-            <FaGithub className="inline" /> <span className="pl-2">github</span>
-          </a>
-          <a className="hover:shadow " href="https://linked.com/in/alipatti">
-            <FaLinkedin className="inline" />{" "}
-            <span className="pl-2">linkedin</span>
-          </a>
-          <a className="hover:shadow " href="/cv.pdf">
-            <FaFile className="inline" /> <span className="pl-2">cv</span>
-          </a>
-        </section>
-
         {/* Bio paragraph */}
         <section id="bio">
           <p className="text-center">
@@ -87,6 +70,23 @@ export default function Home() {
             </li>
             <li>pickup sports of any kind</li>
           </ul>
+        </section>
+
+        {/* Links */}
+        <section
+          id="links"
+          className="px-auto children:rounded children:bg-[#7C4C5C] children:px-3 children:py-2 flex flex-wrap items-center justify-center gap-10 text-gray-200"
+        >
+          <a className="hover:shadow" href="https://github.com/alipatti">
+            <FaGithub className="inline" /> <span className="pl-2">github</span>
+          </a>
+          <a className="hover:shadow " href="https://linked.com/in/alipatti">
+            <FaLinkedin className="inline" />{" "}
+            <span className="pl-2">linkedin</span>
+          </a>
+          <a className="hover:shadow " href="/cv.pdf">
+            <FaFile className="inline" /> <span className="pl-2">cv</span>
+          </a>
         </section>
       </main>
 

@@ -21,12 +21,11 @@ export default function Home() {
         {/* Bio paragraph */}
         <section id="bio">
           <p className="text-center">
-            I'm Alistair, a undergrad at Carleton College studying math,
-            statistics, and computer science. Recently, I've worked as a
-            researcher at the University of Minnesota, using tools from
-            cryptography to develop a privacy-preserving method for reporting
-            abuse and misinformation on encrypted messaging platforms like
-            WhatsApp and Signal. My{" "}
+            I'm Alistair, a senior at Carleton College studying math,
+            statistics, and computer science. Recently, I've worked in the
+            privacy and cryptography research group at the University of
+            Minnesota investigating how to handle abuse and misinformation on
+            encrypted messaging platforms like WhatsApp. My{" "}
             <a href="https://link.springer.com/article/10.1007/BF02187731">
               Erdös
             </a>{" "}
@@ -75,16 +74,19 @@ export default function Home() {
         {/* Links */}
         <section
           id="links"
-          className="px-auto children:rounded children:bg-[#7C4C5C] children:px-3 children:py-2 flex flex-wrap items-center justify-center gap-10 text-gray-200"
+          className="px-auto flex flex-wrap items-center justify-center gap-10"
         >
-          <a className="hover:shadow" href="https://github.com/alipatti">
+          <a className="button hover:shadow" href="https://github.com/alipatti">
             <FaGithub className="inline" /> <span className="pl-2">github</span>
           </a>
-          <a className="hover:shadow " href="https://linked.com/in/alipatti">
+          <a
+            className="button hover:shadow"
+            href="https://linked.com/in/alipatti"
+          >
             <FaLinkedin className="inline" />{" "}
             <span className="pl-2">linkedin</span>
           </a>
-          <a className="hover:shadow " href="/cv.pdf">
+          <a className="button hover:shadow" href="/cv.pdf">
             <FaFile className="inline" /> <span className="pl-2">cv</span>
           </a>
         </section>

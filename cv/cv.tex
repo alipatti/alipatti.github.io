@@ -9,6 +9,7 @@
 \href{http://alipatti.com}{\it alipatti.com}
 }
 
+\usepackage[maxnames=100, giveninits=true]{biblatex}
 \addbibresource{publications.bib}
 
 \begin{document}
@@ -22,11 +23,12 @@
 {September 2020 -- June 2024}
 
 \begin{itemize}
-	\item 3.99 GPA, captain of varsity track and field, minor in Digital Arts and Humanities.
+	\item 3.99 GPA,  minor in Digital Arts and Humanities.
+	\item Captain of varsity track and field, all-conference honorable mention at 800m.
 	\item Studied abroad at the University of Cambridge taking classes in computer science and history.
-	      % \item Math coursework in algebra, analysis, combinatorics, and analytic number theory.
-	      % \item Computer science coursework in algorithms, cryptography, artificial intelligence, and quantum computing.
-	      % \item Statistics coursework in probability, regression, time-series analysis, data science, and data visualization.
+	\item Theses:
+	      \textit{An Introduction to Analytic Number Theory} (math),
+	      \textit{Live Win Probabilities in Soccer with RNNs} (stats).
 \end{itemize}
 
 % \resumeitem{Talented Youth Mathematics Program}
@@ -39,22 +41,14 @@
 
 \section{Work Experience}
 
-\resumeitem{Statistical Consultant}{Minnesota Department of Human Services}{September 2023 -- present}
-
-\begin{itemize}
-	\item Consult for Age-Friendly Minnesota, a collaboration between several government and private entities with the goal of making the state more accessible to and inclusive of older Minnesotans.
-	\item Analyze a large survey data set to identify disparities in wealth, housing, and internet access among elderly Minnesotans.
-	\item Create data visualizations and give bi-weekly reports to a group of government employees and other consultants.
-\end{itemize}
-
 \resumeitem{Research Assistant}
 {University of Minnesota}
 {September 2022 -- present}
 
 \begin{itemize}
-	\item Developed a method for reporting abuse on encrypted messaging platforms that provably maintains privacy until certain thresholds are met, e.g., if a user is reported enough times or by enough people.
-	\item Wrote and benchmarked a proof-of-concept implementation in Rust.
-	\item Presented findings at a first-tier security conference. We plan to publish more results in 2024.
+	\item Work with Professor Nicholas Hopper to develop methods for reporting abuse on encrypted messaging platforms that preserve users' privacy.
+	\item Write and benchmark proof-of-concept implementations in Python and Rust.
+	\item Presented findings at a first-tier security conference in 2023. We plan to publish more results in 2024.
 \end{itemize}
 
 \resumeitem{Teaching Assistant}
@@ -63,14 +57,22 @@
 
 \begin{itemize}
 	\item Tutor students, grade homework, and hold office hours for classes in the math and computer science departments.
-	\item Classes include
-	      algorithms, % (CS 252),
-	      real analysis, % (MATH 321),
-	      abstract algebra, % (MATH 342),
-	      data visualization, % (CS 314),
-	      artificial intelligence, % (CS 321),
-	      and calculus. % (MATH 120),
-	      %   and math structures. % (MATH 236).
+	\item Classes:
+	      Algorithms,
+	      Artificial Intelligence,
+	      Real Analysis I,
+	      Abstract Algebra I,
+	      Data Visualization,
+	      Math Structures,
+	      and Calculus II.
+\end{itemize}
+
+\resumeitem{Statistical Consultant}{Minnesota Department of Human Services}{September 2023 -- November 2023}
+
+\begin{itemize}
+	\item Worked with interdepartmental task force to help make Minnesota's government systems more inclusive of older adults.
+	\item Analyzed American Community Survey data to identify demographic disparities in wealth, housing, and internet access.
+	\item Created data visualizations and interactive dashboards for use by government employees and other consultants.
 \end{itemize}
 
 \resumeitem{The Food Guy}
@@ -80,7 +82,7 @@
 \begin{itemize}
 	\item Oversaw the purchase and distribution of food for nearly 200 wilderness trips across the US and Canada.
 	\item Managed a \$95,000 budget alongside two other employees and taught basic nutrition to kids aged 12 to 18.
-	\item Lead a week-long canoeing trip with BOLD, a program dedicated to making the outdoors more diverse and accessible.
+	\item Lead a week-long canoeing trip with a program dedicated to making the outdoors more diverse and financially accessible.
 \end{itemize}
 
 \resumeitem{Dining Hall Worker}
@@ -95,14 +97,19 @@
 % {Pattison Lawn Care}
 % {2015 -- 2020}
 
-\null
+\smallskip
 
-\section{Publications}
+\section{Publications/Preprints}
 
-% TODO add url: (will appear at https://arxiv.org/user/)
 \fullcite{cerberus}
 
 \fullcite{threshold-reporting}
+
+\fullcite{examplar}
+
+% \fullcite{math-comps}
+
+% \fullcite{stats-comps}
 
 \section{Awards}
 
@@ -110,9 +117,12 @@
 
 \begin{itemize}[label={}, leftmargin=0em]
 	\item \award{Phi Beta Kappa}{2023}
+	      \quad \textit{(one of nine Junior-year inductees, roughly 2 percent of the class)}
+	      % https://carleton-wp-production.s3.amazonaws.com/uploads/sites/287/2023/05/Carleton-Honors-Convocation-Program-2023.pdf
 	\item \award{Dean's List}{2023, 2022, 2021}
-	\item \award{James F. Koehler Scholarship}{2022}
+	      \quad \textit{(awarded to top 10 percent of class by GPA)}
 	\item \award{National Merit Scholarship}{2020}
+	      \quad \textit{(awarded to roughly the top 1 percent of high-school seniors in the U.S.)}
 \end{itemize}
 
 \section{Projects}
@@ -124,11 +134,45 @@
 		\href{http://github.com/alipatti/#2}{\textit{alipatti/#2}}
 	}}
 
-\project{Ole or Carl?}{oleorcarl}
+\project{Ole or Carl?}{ole-or-carl}
 
 \begin{itemize}
 	\item This project tests the validity of a long-standing stereotype that students from Northfield's two colleges look meaningfully different. If so, then a machine learning model should be able to tell them apart? Right?
-	\item Uses an SVM classifier on embeddings of student's faces taken from directory photos.
+	\item Uses a linear support-vector classifier on embeddings of student's faces taken from directory photos.
+\end{itemize}
+
+\project{Wordle Bot}{wordle-bot}
+
+\begin{itemize}
+	\item A Python and NumPy implementation, of 3Blue1Brown's information-theoretic Wordle bot, with a few improvements.
+	\item Wins in $\sim 3.5$ moves on average.
+\end{itemize}
+
+\project{In Passing}{in-passing}
+
+\begin{itemize}
+	\item A visualization of passing and touch data from the 2022 FIFA Men's World Cup, built with d3.js.
+\end{itemize}
+
+\project{TODO.swift}{todo.swift}
+
+\begin{itemize}
+	\item A command line app to view and add to your Apple reminders, written in Swift.
+	\item Directly updates Apple's iCloud database, so changes are reflected in the Reminders app across all your devices.
+\end{itemize}
+
+\project{An Introduction to Algebraic Number Theory}{math-comps}
+
+\begin{itemize}
+	\item A whirlwind introduction to number rings, number fields, the class group, and Dirichlet's unit theorem.
+	\item Written as a senior thesis for the Carleton math department.
+\end{itemize}
+
+\project{OEIS.rs}{oeis.rs}
+
+\begin{itemize}
+	\item A terminal interface for the Online Encyclopedia of Integer Sequences, written in Rust.
+	\item Provides interactive and non-interactive CLI.
 \end{itemize}
 
 \project{Carleton Course Classifier}{course-classifier}
@@ -138,30 +182,38 @@
 	\item Achieves 64\% accuracy in a 54-class problem using a neural net and the Stanford GloVe embeddings.
 \end{itemize}
 
-\project{Wordle Bot}{wordle-bot}
+\project{Smart Garage}{homekit-garage-door}
 
 \begin{itemize}
-	\item A NumPy implementation, of 3Blue1Brown's information-theoretic Wordle bot, with a few performance improvements.
+	\item Uses an ESP32 microcontroller to integrate my parents' 40-year-old garage door opener with Apple HomeKit.
 \end{itemize}
 
-\project{In Passing}{in-passing}
-
-\begin{itemize}
-	\item A visualization of passing and touch data from the 2022 FIFA Men's World Cup, built with d3.js.
-\end{itemize}
 
 \section{Skills}
 
-\textbf{Programming:} Python, R, JavaScript, \LaTeX, Rust, Java, SQL, git, Docker.
+\textbf{Programming:} Python, R, JavaScript, \LaTeX, Rust, Java, SQL, git, Docker, Swift.
 
-\textbf{Web Development:} React, Typescript, Next.js, Prisma.
+\textbf{Web Development:} Typescript, React, Next.js, Prisma.
 
-\textbf{Data Science:} NumPy, dplyr, pandas, Matplotlib, ggplot2, tidyverse, SQL.
+\textbf{Data Science:} R (tidyverse, ggplot2), Python (NumPy, pandas, Matplotlib), SQL.
 
-\textbf{Machine Learning:} TensorFlow, vector embeddings, SVMs, scikit-learn.
+\textbf{Machine Learning:} TensorFlow, scikit-learn.
 
 \textbf{Data Visualization:} ggplot2, matplotlib, d3.js.
 
-% \textbf{Writing:} adept at writing for many different audiences.
+\section{Coursework}
+
+\textbf{Math}:
+algebra, analysis, combinatorics, topology, analytic and algebraic number theory, representation theory, and Galois theory.
+
+\textbf{Computer science}:
+algorithms, data structures, cryptography, artificial intelligence, natural language processing, and quantum computing.
+
+\textbf{Statistics}:
+probability, regression, time-series analysis, machine learning, data science, and data visualization.
+
+\section{Personal Interests}
+
+Running, the Minnesota Timberwolves, the Premier League, backpacking, photography, playing the piano, Nordic skiing, Wii Mario Kart, tomfoolery.
 
 \end{document}

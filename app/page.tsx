@@ -13,7 +13,7 @@ export default function Home() {
           {/* Headshot image */}
           <Image
             className="aspect-square rounded-full object-cover object-left-top"
-            src={"/photos/me.jpeg"}
+            src={"/me.jpeg"}
             alt="Me in Austria."
             height={280}
             width={280}

@@ -3,12 +3,14 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="container mx-auto grid justify-center gap-10 p-4 md:max-w-2xl lg:p-10">
+    <div className="container mx-auto my-10 grid justify-center gap-10 px-5 text-center xl:mt-20 xl:gap-5">
       <h1 className="text-6xl">Alistair Pattison</h1>
 
-      <main className="flex flex-col items-center gap-10">
-        {/* Headshot image */}
-        <section id="headshot">
+      <hr className="mx-auto hidden h-px w-60 border-0 bg-gray-700 dark:bg-gray-100 xl:block" />
+
+      <main className="flex flex-col items-center">
+        <div className="flex flex-col items-center gap-10 xl:flex-row">
+          {/* Headshot image */}
           <Image
             className="aspect-square rounded-full object-cover object-left-top"
             src={"/photos/me.jpeg"}
@@ -16,80 +18,63 @@ export default function Home() {
             height={280}
             width={280}
           ></Image>
-        </section>
 
-        {/* Bio paragraph */}
-        <section id="bio">
-          <p className="text-center">
-            I'm Alistair, a senior at Carleton College studying math,
-            statistics, and computer science. Recently, I've worked in the
-            privacy and cryptography research group at the University of
-            Minnesota investigating how to handle abuse and misinformation on
-            encrypted messaging platforms like WhatsApp. My{" "}
-            <a href="https://link.springer.com/article/10.1007/BF02187731">
-              Erdös
-            </a>{" "}
-            <a href="https://collaborate.princeton.edu/en/publications/matching-nuts-and-bolts">
-              number
-            </a>{" "}
-            <a href="https://link.springer.com/chapter/10.1007/3-540-39200-9_18">
-              is
-            </a>{" "}
-            <a href="https://arxiv.org/abs/2306.01241">four.</a>
-          </p>
-
-          <p className="mb-0">Other interests:</p>
-
-          <ul className="list-inside list-disc columns-2 pl-2">
-            <li>
-              <a href="https://athletics.carleton.edu/news/2023/2/11/mens-track-and-field-knights-win-7-times-at-the-meet-of-the-hearts.aspx">
-                running{" "}
-              </a>
-            </li>
-            <li>
-              <a href="https://github.com/alipatti">
-                unfinished coding projects
-              </a>
-            </li>
-            <li>
-              <a href="/photos/wilmore.jpg">being outside</a>
-            </li>
-            <li>
-              <a href="https://observablehq.com/@alipatti/in-passing">
-                data visualization
-              </a>
-            </li>
-            <li>
+          {/* Bio paragraph */}
+          <section id="bio" className="max-w-lg text-center xl:max-w-lg">
+            <p className="mb-6">
+              I'm a student at{" "}
               <a href="https://www.startribune.com/minnesota-winter-weather-temperature-cold-north-pole/600114153/">
-                the midwest
+                Carleton College
+              </a>{" "}
+              where I study mostly math and spend a lot of time{" "}
+              <a href="https://athletics.carleton.edu/news/2023/2/11/mens-track-and-field-knights-win-7-times-at-the-meet-of-the-hearts.aspx">
+                running in circles
               </a>
-            </li>
-            <li>
-              <a href="http://github.com/alipatti/dotfiles">bikeshedding</a>
-            </li>
-            <li>pickup sports of any kind</li>
-          </ul>
-        </section>
+              . In my free time, I write a lot of{" "}
+              <a href="https://github.com/alipatti">mostly-useless code</a>, and
+              religously follow{" "}
+              <a href="https://observablehq.com/@alipatti/in-passing">soccer</a>{" "}
+              and the NBA. My{" "}
+              <a href="https://link.springer.com/article/10.1007/BF02187731">
+                Erdös
+              </a>{" "}
+              <a href="https://collaborate.princeton.edu/en/publications/matching-nuts-and-bolts">
+                number
+              </a>{" "}
+              <a href="https://link.springer.com/chapter/10.1007/3-540-39200-9_18">
+                is
+              </a>{" "}
+              <a href="https://arxiv.org/abs/2306.01241">four.</a>
+            </p>
 
-        {/* Links */}
-        <section
-          id="links"
-          className="px-auto flex flex-wrap items-center justify-center gap-10"
-        >
-          <a className="button hover:shadow" href="https://github.com/alipatti">
-            <FaGithub className="inline" /> <span className="pl-2">github</span>
-          </a>
-          <a
-            className="button hover:shadow"
-            href="https://linked.com/in/alipatti"
-          >
-            <FaLinkedin className="inline" />{" "}
-            <span className="pl-2">linkedin</span>
-          </a>
-          <a className="button hover:shadow" href="/cv.pdf">
-            <FaFile className="inline" /> <span className="pl-2">cv</span>
-          </a>
-        </section>
+            {/* Links */}
+            <div
+              id="links"
+              className="px-auto flex flex-wrap items-center justify-center gap-5 sm:gap-10"
+            >
+              <a
+                className="button hover:shadow"
+                href="https://github.com/alipatti"
+              >
+                <FaGithub className="inline" />{" "}
+                <span className="pl-2">github</span>
+              </a>
+              <a
+                className="button hover:shadow"
+                href="https://linked.com/in/alipatti"
+              >
+                <FaLinkedin className="inline" />{" "}
+                <span className="pl-2">linkedin</span>
+              </a>
+              <a
+                className="button hover:shadow"
+                href="https://github.com/alipatti/cv/releases/latest/download/main.pdf"
+              >
+                <FaFile className="inline" /> <span className="pl-2">cv</span>
+              </a>
+            </div>
+          </section>
+        </div>
       </main>
 
       <section id="github"></section>

@@ -15,11 +15,12 @@ export const theme = {
     },
   },
   colors: {
-    "gray": colors.stone,
+    "gray": colors.neutral,
     "white": colors.white,
     "lightgreen": "#618081",
     "darkgreen": "#273940",
     "blue": "#006d9a",
+    "lightblue": "#78c2e2",
     "brown": "#54413e",
   }
 };

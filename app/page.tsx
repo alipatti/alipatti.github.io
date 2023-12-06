@@ -31,7 +31,7 @@ export default function Home() {
                 running in circles
               </a>
               . In my free time, I write a lot of{" "}
-              <a href="https://github.com/alipatti">mostly-useless code</a>, and
+              <a href="https://github.com/alipatti">mostly-useless code</a> and
               religously follow{" "}
               <a href="https://observablehq.com/@alipatti/in-passing">soccer</a>{" "}
               and the NBA. My{" "}

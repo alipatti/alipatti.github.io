@@ -59,6 +59,7 @@ export default function Home() {
                 <FaGithub className="inline" />{" "}
                 <span className="pl-2">github</span>
               </a>
+              {/*
               <a
                 className="button hover:shadow"
                 href="https://linked.com/in/alipatti"
@@ -66,6 +67,7 @@ export default function Home() {
                 <FaLinkedin className="inline" />{" "}
                 <span className="pl-2">linkedin</span>
               </a>
+              */}
               <a
                 className="button hover:shadow"
                 href="https://github.com/alipatti/cv/releases/latest/download/main.pdf"

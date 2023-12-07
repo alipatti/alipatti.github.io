@@ -26,7 +26,7 @@ export default function Home() {
               <a href="https://www.startribune.com/minnesota-winter-weather-temperature-cold-north-pole/600114153/">
                 Carleton College
               </a>{" "}
-              where I study mostly math and spend a lot of time{" "}
+              where I study math and spend a lot of time{" "}
               <a href="https://athletics.carleton.edu/news/2023/2/11/mens-track-and-field-knights-win-7-times-at-the-meet-of-the-hearts.aspx">
                 running in circles
               </a>

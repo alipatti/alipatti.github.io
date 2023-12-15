@@ -20,8 +20,11 @@ export default function Home() {
           ></Image>
 
           {/* Bio paragraph */}
-          <section id="bio" className="max-w-lg text-center xl:max-w-lg">
-            <p className="mb-6">
+          <section
+            id="bio"
+            className="max-w-lg space-y-6 text-center xl:max-w-lg"
+          >
+            <p>
               I'm a student at{" "}
               <a href="https://www.startribune.com/minnesota-winter-weather-temperature-cold-north-pole/600114153/">
                 Carleton College
@@ -30,21 +33,15 @@ export default function Home() {
               <a href="https://athletics.carleton.edu/news/2023/2/11/mens-track-and-field-knights-win-7-times-at-the-meet-of-the-hearts.aspx">
                 running in circles
               </a>
-              . In my free time, I write a lot of{" "}
-              <a href="https://github.com/alipatti">mostly-useless code</a> and
-              religously follow{" "}
-              <a href="https://observablehq.com/@alipatti/in-passing">soccer</a>{" "}
-              and the NBA. My{" "}
-              <a href="https://link.springer.com/article/10.1007/BF02187731">
-                Erdös
-              </a>{" "}
-              <a href="https://collaborate.princeton.edu/en/publications/matching-nuts-and-bolts">
-                number
-              </a>{" "}
-              <a href="https://link.springer.com/chapter/10.1007/3-540-39200-9_18">
-                is
-              </a>{" "}
-              <a href="https://arxiv.org/abs/2306.01241">four.</a>
+              . Sometimes I write <a href="https://github.com/alipatti">code</a>
+              .
+            </p>
+
+            <p>
+              I'm currently looking for work with a broad interest in applying
+              my quantitative and analytical chops to problems in the real
+              world. If you're hiring,{" "}
+              <a href="mailto:pattisona@carleton.edu">send me an email</a>!
             </p>
 
             {/* Links */}
@@ -59,15 +56,13 @@ export default function Home() {
                 <FaGithub className="inline" />{" "}
                 <span className="pl-2">github</span>
               </a>
-              {/*
               <a
                 className="button hover:shadow"
-                href="https://linked.com/in/alipatti"
+                href="https://linkedin.com/in/alipatti"
               >
                 <FaLinkedin className="inline" />{" "}
                 <span className="pl-2">linkedin</span>
               </a>
-              */}
               <a
                 className="button hover:shadow"
                 href="https://github.com/alipatti/cv/releases/latest/download/pattison-cv.pdf"

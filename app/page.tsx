@@ -65,7 +65,7 @@ export default function Home() {
               </a>
               <a
                 className="button hover:shadow"
-                href="https://github.com/alipatti/cv/releases/latest/download/pattison-cv.pdf"
+                href="https://github.com/alipatti/cv/releases/latest/download/pattison-cv-full.pdf"
               >
                 <FaFile className="inline" /> <span className="pl-2">cv</span>
               </a>

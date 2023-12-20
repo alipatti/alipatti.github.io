@@ -3,13 +3,14 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="mx-auto my-10 px-5 xl:mt-20 xl:gap-5">
-      <section id="bio" className="grid justify-center gap-10 text-center">
-        <div>
-          <h1 className="text-6xl">Alistair Pattison</h1>
+    <main>
+      <section
+        id="bio"
+        className={`pt-10 flex flex-col h-[calc(100vh_-_3.5rem)] justify-start items-center gap-10 px-5 text-center xl:pt-20 xl:gap-5`}
+      >
+        <h1 className="text-6xl">Alistair Pattison</h1>
 
-          <hr className="mx-auto hidden h-px w-60 border-0 bg-gray-700 dark:bg-gray-100 xl:block translate-y-5" />
-        </div>
+        <hr className="mx-auto hidden h-px w-60 border-0 bg-gray-700 dark:bg-gray-100 xl:block" />
 
         <div className="flex flex-col items-center">
           <div className="flex flex-col items-center gap-10 xl:flex-row">
@@ -78,7 +79,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="github"></section>
+      <section id="cv" className="bg-lightblue">
+        <h2 className="text-center">Hello world!</h2>
+      </section>
     </main>
   );
 }

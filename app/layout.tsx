@@ -5,7 +5,10 @@ export const metadata = {
   title: "Alistair Pattison — alipatti.com",
 };
 
-const karla = Karla({ subsets: ["latin"] });
+const karla = Karla({
+  subsets: ["latin"],
+  display: "swap",
+});
 const headerHeight = "3.5rem";
 
 export default function RootLayout({
@@ -34,6 +37,10 @@ export default function RootLayout({
 
         {/* MAIN CONTENT */}
         {children}
+
+        <footer className="bg-darkgreen/70 text-lightblue/50 p-5 text-center text-sm font-light">
+          <span>© Alistair Pattison, 2023</span>
+        </footer>
       </body>
     </html>
   );

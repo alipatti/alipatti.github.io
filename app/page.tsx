@@ -1,12 +1,13 @@
 import { FaFile, FaGithub, FaLinkedin } from "react-icons/fa";
 import Image from "next/image";
+import CV from "./cv";
 
 export default function Home() {
   return (
     <main>
       <section
         id="bio"
-        className={`pt-10 flex flex-col h-[calc(100vh_-_3.5rem)] justify-start items-center gap-10 px-5 text-center xl:pt-20 xl:gap-5`}
+        className={`flex min-h-[calc(100vh-3.5rem)] flex-col items-center justify-start gap-10 px-5 py-10 text-center xl:gap-5 xl:pt-20`}
       >
         <h1 className="text-6xl">Alistair Pattison</h1>
 
@@ -79,8 +80,14 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="cv" className="bg-lightblue">
-        <h2 className="text-center">Hello world!</h2>
+      <section id="cv" className="bg-lightgreen/30 p-10 min-h-screen">
+        <a
+          className="hover:underline hover:text-blue mx-auto block"
+          href="https://github.com/alipatti/cv/releases/latest/download/pattison-cv-full.pdf"
+        >
+          <FaFile className="inline mr-1 -translate-y-0.5" /> Download CV as a pdf
+        </a>
+        <CV />
       </section>
     </main>
   );

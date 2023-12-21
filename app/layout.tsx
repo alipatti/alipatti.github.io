@@ -1,7 +1,6 @@
 import "./globals.css";
 import { Karla } from "next/font/google";
-import { abort } from "process";
-import { FaBeer, FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
 
 export const metadata = {
   title: "Alistair Pattison — alipatti.com",

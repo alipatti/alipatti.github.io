@@ -39,14 +39,14 @@ export default function RootLayout({
         {/* MAIN CONTENT */}
         {children}
 
-        <footer className="bg-darkgreen/70 text-lightblue/50 p-5 text-center text-sm font-light">
-          <p>
+        <footer className="bg-darkgreen/70 dark:text-lightblue/50 p-5 text-center text-sm font-light text-white/60">
+          <span className="mb-3 block">
             Made with Next.js and Tailwind CSS (
-            <a href="https://github.com/alipatti/alipatti.github.io">source</a>)
+            <a href="https://github.com/alipatti/alipatti.github.io" className="hover:underline">source</a>)
             .
-          </p>
+          </span>
 
-          <hr className="mx-auto mb-3 w-10 opacity-5" />
+          <hr className="mx-auto mb-3 w-10 opacity-10 dark:opacity-5" />
 
           <div className="descendant-span:ml-2 hover:descendant-a:underline mx-auto mb-3 flex w-1/2 flex-wrap justify-center gap-x-3 gap-y-1">
             <a href="https://linkedin.com/in/alipatti">
@@ -65,7 +65,7 @@ export default function RootLayout({
             </a>
           </div>
 
-          <hr className="mx-auto mb-3 w-10 opacity-5" />
+          <hr className="mx-auto mb-3 w-10 opacity-10 dark:opacity-5" />
 
           <p>© Alistair Pattison, 2023.</p>
         </footer>

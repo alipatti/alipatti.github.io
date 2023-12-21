@@ -73,6 +73,16 @@ export default function Home() {
                 </a>
               </div>
             </section>
+
+            <a className="text-lightgreen mt-20 hover:scale-110 duration-1000" href="#cv">
+              <p className="-mb-1">More about me</p>
+              <div className="mb-2 animate-pulse opacity-80">
+                <span className="inline-block scale-x-[8] -space-y-3 text-xl">
+                  <span className="block">⌄</span>
+                  <span className="block">⌄</span>
+                </span>
+              </div>
+            </a>
           </div>
         </div>
       </section>
@@ -84,7 +94,7 @@ export default function Home() {
           </h1>
 
           <a
-            className="hover:text-blue hover:underline text-sm"
+            className="hover:text-blue text-sm hover:underline"
             href="https://github.com/alipatti/cv/releases/latest/download/pattison-cv-full.pdf"
           >
             <FaFile className="mr-1 inline -translate-y-0.5" /> Download as a

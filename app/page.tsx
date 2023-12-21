@@ -65,12 +65,6 @@ export default function Home() {
                   <FaLinkedin className="inline" />{" "}
                   <span className="pl-2">linkedin</span>
                 </a>
-                <a
-                  className="button hover:shadow"
-                  href="https://github.com/alipatti/cv/releases/latest/download/pattison-cv-full.pdf"
-                >
-                  <FaFile className="inline" /> <span className="pl-2">cv</span>
-                </a>
               </div>
             </section>
 

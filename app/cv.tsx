@@ -2,6 +2,7 @@
 
 import yaml from "js-yaml";
 import { useState, useEffect } from "react";
+import { FaGithub } from "react-icons/fa";
 
 const yamlUrl = "https://raw.githubusercontent.com/alipatti/cv/main/main.yml";
 
@@ -79,6 +80,17 @@ function Item({ item }: { item: CVItem }) {
           </p>
         )}
       </div>
+
+      {/* -- GITHUB LINK -- */}
+      {item.github && (
+        <a
+          href={`https://github.com/alipatti/${item.github}`}
+          className="ml-3 text-sm italic opacity-80 dark:font-extralight dark:opacity-50"
+        >
+          <FaGithub className="mr-1.5 inline -translate-y-0.5" />
+          /alipatti/{item.github}
+        </a>
+      )}
 
       {/* -- BULLETS -- */}
       {(item.paren || item.notes || item.bullets) && (

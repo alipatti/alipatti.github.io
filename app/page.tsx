@@ -25,10 +25,7 @@ export default function Home() {
             ></Image>
 
             {/* Bio paragraph */}
-            <section
-              id="bio"
-              className="max-w-lg space-y-6 text-center xl:max-w-lg"
-            >
+            <section id="bio" className="max-w-lg space-y-6 text-center">
               <p>
                 I'm a student at{" "}
                 <a href="https://www.startribune.com/minnesota-winter-weather-temperature-cold-north-pole/600114153/">
@@ -80,14 +77,24 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="cv" className="bg-lightgreen/30 p-10 min-h-screen">
-        <a
-          className="hover:underline hover:text-blue mx-auto block"
-          href="https://github.com/alipatti/cv/releases/latest/download/pattison-cv-full.pdf"
-        >
-          <FaFile className="inline mr-1 -translate-y-0.5" /> Download CV as a pdf
-        </a>
-        <CV />
+      <section id="cv" className="bg-lightgreen/30 min-h-screen p-5 md:p-20">
+        <div className="mb-10 flex flex-col items-center gap-3">
+          <h1 className="text-center text-4xl tracking-wide">
+            CURRICULUM VITAE
+          </h1>
+
+          <a
+            className="hover:text-blue hover:underline text-sm"
+            href="https://github.com/alipatti/cv/releases/latest/download/pattison-cv-full.pdf"
+          >
+            <FaFile className="mr-1 inline -translate-y-0.5" /> Download as a
+            pdf
+          </a>
+        </div>
+
+        <div className="mx-auto max-w-[48rem]">
+          <CV />
+        </div>
       </section>
     </main>
   );

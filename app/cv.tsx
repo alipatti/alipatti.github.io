@@ -12,6 +12,7 @@ interface CVContent {
 
 interface CVSection {
   title: string;
+  summary: string;
   items?: CVItem[];
 }
 
@@ -19,6 +20,9 @@ interface CVItem {
   title?: string;
   subtitle?: string;
   dates?: string;
+  notes?: string;
+  paren?: string;
+  github?: string;
   bullets?: string[];
 }
 
@@ -48,25 +52,62 @@ function Section({ section }: { section: CVSection }) {
     <div>
       <h2>{section.title}</h2>
 
-      {section.items &&
-        section.items.map((item) => <Item item={item} key={item.title} />)}
+      <div className="md:ml-4">
+        {section.summary && <p>{section.summary}</p>}
+
+        {section.items &&
+          section.items.map((item) => <Item item={item} key={item.title} />)}
+      </div>
+      <hr className="mx-auto my-8 w-1/2 border-gray-800 opacity-20 dark:border-white" />
     </div>
   );
 }
 
 function Item({ item }: { item: CVItem }) {
-  return (
-    <div>
-      <h3>{item.title}</h3>
+  // TODO: add citation support
+  // http://github.com/digitalheir/bibtex-js
 
-      {item.bullets && (
-        <ul className="ml-4 list-['-']">
-          {item.bullets.map((bullet, i) => (
-            <li key={i} className="pl-1">
-              {bullet}
-            </li>
-          ))}
+  return (
+    <div className="group mt-2 transition-all" tabIndex={100}>
+      {/* -- TITLE BLOCK -- */}
+      <div className="grid-cols-2 items-baseline space-y-0 md:grid">
+        <h3 className="font-lg mb-0">{item.title}</h3>
+        {item.subtitle && <p className="col-span-2">{item.subtitle}</p>}
+        {item.dates && (
+          <p className="col-start-2 row-start-1 text-sm font-light md:text-right">
+            {item.dates}
+          </p>
+        )}
+      </div>
+
+      {/* -- BULLETS -- */}
+      {(item.paren || item.notes || item.bullets) && (
+        <ul className="descendant-li:flex descendant-li:mt-1 descendant-span:mx-2 font-light italic">
+          <li>
+            <span className="opacity-30">↳</span>
+            {item.paren}
+            {item.notes}
+            {item.bullets && item.bullets[0]}
+          </li>
+
+          <div className="max-h-0 overflow-hidden duration-500 group-focus:max-h-56">
+            {item.bullets?.slice(1).map((bullet, i) => (
+              <li key={i}>
+                <span className="opacity-30">↳</span>
+                {bullet}
+              </li>
+            ))}
+          </div>
         </ul>
+      )}
+
+      {/* -- ARROW TO EXPAND BULLETS -- */}
+      {item.bullets?.length && item.bullets.length > 1 && (
+        <div className="mb-2 text-center duration-500 group-hover:scale-125 group-hover:animate-pulse group-focus:scale-100 group-focus:animate-none">
+          <span className="inline-block scale-x-[3] text-sm duration-500 group-focus:rotate-180">
+            ⌄
+          </span>
+        </div>
       )}
     </div>
   );

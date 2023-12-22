@@ -67,8 +67,13 @@ export default function Home() {
                 </a>
               </div>
             </section>
+          </div>
 
-            <a className="text-lightgreen mt-20 hover:scale-110 duration-1000" href="#cv">
+          <div className=" mt-20 ">
+            <a
+              className="text-lightgreen duration-1000 hover:scale-110"
+              href="#cv"
+            >
               <p className="-mb-1">More about me</p>
               <div className="mb-2 animate-pulse opacity-80">
                 <span className="inline-block scale-x-[8] -space-y-3 text-xl">

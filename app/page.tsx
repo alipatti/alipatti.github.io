@@ -69,7 +69,7 @@ export default function Home() {
             </section>
           </div>
 
-          <div className=" mt-20 ">
+          <div className="mt-20">
             <a
               className="text-lightgreen duration-1000 hover:scale-110"
               href="#cv"

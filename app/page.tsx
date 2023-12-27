@@ -25,25 +25,24 @@ export default function Home() {
             ></Image>
 
             {/* Bio paragraph */}
-            <section id="bio" className="max-w-lg space-y-6 text-center">
+            <section id="bio" className="max-w-lg space-y-10 text-center">
               <p>
                 I'm a student at{" "}
-                <a href="https://www.startribune.com/minnesota-winter-weather-temperature-cold-north-pole/600114153/">
+                <a
+                  target="_blank"
+                  href="https://www.startribune.com/minnesota-winter-weather-temperature-cold-north-pole/600114153/"
+                >
                   Carleton College
                 </a>{" "}
                 where I study math and spend a lot of time{" "}
-                <a href="https://athletics.carleton.edu/news/2023/2/11/mens-track-and-field-knights-win-7-times-at-the-meet-of-the-hearts.aspx">
+                <a
+                  target="_blank"
+                  href="https://athletics.carleton.edu/news/2023/2/11/mens-track-and-field-knights-win-7-times-at-the-meet-of-the-hearts.aspx"
+                >
                   running in circles
                 </a>
                 . Sometimes I write{" "}
                 <a href="https://github.com/alipatti">code</a>.
-              </p>
-
-              <p>
-                I'm currently looking for work with a broad interest in applying
-                my quantitative and analytical chops to problems in the real
-                world. If you're hiring,{" "}
-                <a href="mailto:pattisona@carleton.edu">send me an email</a>!
               </p>
 
               {/* Links */}
@@ -72,7 +71,7 @@ export default function Home() {
           <div className="mt-20">
             <a
               className="text-lightgreen duration-1000 hover:scale-110"
-              href="#cv"
+              href="#about"
             >
               <p className="-mb-1">More about me</p>
               <div className="mb-2 animate-pulse opacity-80">
@@ -86,25 +85,51 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="cv" className="bg-lightgreen/30 min-h-screen p-5 md:p-20">
-        <div className="mb-10 flex flex-col items-center gap-3">
-          <h1 className="text-center text-4xl tracking-wide">
-            CURRICULUM VITAE
+      <div className="bg-lightgreen/30 children:py-10 min-h-screen space-y-16 px-5 py-10 md:py-20">
+        <section
+          id="about"
+          className="dark:children-p:font-light mx-auto max-w-lg space-y-3 text-center"
+        >
+          <h1 className="mb-8 text-4xl uppercase tracking-wide">About</h1>
+          <p>
+            I'm a senior undergraduate at Carleton College with a broad interest
+            in work that blends the real-world impact of statistics, computer
+            science, and economics with the uncompromising rigor of pure
+            mathematics. Recently, this has taken the form of statistical
+            consulting and research in algorithms and cryptography. I'm
+            particularly interested in machine learning.
+          </p>
+
+          <p>
+            Outside of class, I captain the varsity track team where I run
+            mid-distance (my main event is the 800m). I'm also an adept
+            programmer (my tools of choice are Python, TypeScript, and Rust).
+          </p>
+
+          <p>
+            If you have a job for which you think I'd be a good fit,{" "}
+            <a href="mailto:pattisona@carleton.edu">send me an email</a>!
+          </p>
+        </section>
+
+        <section id="cv" className="space-y-3">
+          <h1 className="text-center text-4xl uppercase tracking-wide">
+            Curriculum Vitae
           </h1>
 
           <a
-            className="hover:text-blue text-sm hover:underline"
+            className="hover:text-blue block text-center text-sm hover:underline"
             href="https://github.com/alipatti/cv/releases/latest/download/pattison-cv-full.pdf"
           >
             <FaFile className="mr-1 inline -translate-y-0.5" /> Download as a
             pdf
           </a>
-        </div>
 
-        <div className="mx-auto max-w-[48rem]">
-          <CV />
-        </div>
-      </section>
+          <div className="mx-auto max-w-[48rem] pt-5 text-left">
+            <CV />
+          </div>
+        </section>
+      </div>
     </main>
   );
 }

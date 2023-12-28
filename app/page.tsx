@@ -15,7 +15,7 @@ export default function Home() {
 
         <div className="flex flex-col items-center">
           <div className="flex flex-col items-center gap-10 xl:flex-row">
-            {/* Headshot image */}
+            {/* -- HEADSHOT -- */}
             <Image
               className="aspect-square rounded-full object-cover object-left-top"
               src={"/me.jpeg"}
@@ -24,7 +24,7 @@ export default function Home() {
               width={280}
             ></Image>
 
-            {/* Bio paragraph */}
+            {/* -- SHORT BIO -- */}
             <section id="bio" className="max-w-lg space-y-10 text-center">
               <p>
                 I'm a student at{" "}
@@ -45,7 +45,7 @@ export default function Home() {
                 <a href="https://github.com/alipatti">code</a>.
               </p>
 
-              {/* Links */}
+              {/* -- SOCIAL LINKS -- */}
               <div
                 id="links"
                 className="px-auto flex flex-wrap items-center justify-center gap-5 sm:gap-10"
@@ -68,10 +68,11 @@ export default function Home() {
             </section>
           </div>
 
+          {/* -- DOWN ARROWS -- */}
           <div className="mt-20">
             <a
               className="text-lightgreen duration-1000 hover:scale-110"
-              href="#about"
+              href="#bottom"
             >
               <p className="-mb-1">More about me</p>
               <div className="mb-2 animate-pulse opacity-80">
@@ -85,33 +86,39 @@ export default function Home() {
         </div>
       </section>
 
-      <div className="bg-lightgreen/30 children:py-10 min-h-screen space-y-16 px-5 py-10 md:py-20">
+      <div
+        id="bottom"
+        className="bg-lightgreen/30 children:py-20 4xl:justify-around children:flex-grow relative flex min-h-screen flex-col items-center px-5 pt-10 2xl:flex-row 2xl:items-start"
+      >
+        {/* -- LONGER BIO -- */}
         <section
           id="about"
-          className="dark:children-p:font-light mx-auto max-w-lg space-y-3 text-center"
+          className="dark:children-p:font-light top-[20%] space-y-3 text-center after:absolute after:right-0 after:top-1/4 after:h-1/2 after:border-r-gray-400/50 dark:after:opacity-50 2xl:sticky 2xl:after:border-r"
         >
           <h1 className="mb-8 text-4xl uppercase tracking-wide">About</h1>
-          <p>
-            I'm a senior undergraduate at Carleton College with a broad interest
-            in work that blends the real-world impact of statistics, computer
-            science, and economics with the uncompromising rigor of pure
-            mathematics. Recently, this has taken the form of statistical
-            consulting and research in algorithms and cryptography. I'm
-            particularly interested in machine learning.
-          </p>
+          <div className="mx-auto max-w-lg">
+            <p>
+              I'm a senior undergraduate with a broad interest in work that
+              blends the real-world impact of statistics and economics with the
+              uncompromising rigor of pure mathematics. Recently, this has taken
+              the form of statistical consulting and research in algorithms and
+              cryptography. I'm particularly interested in machine learning.
+            </p>
 
-          <p>
-            Outside of class, I captain the varsity track team where I run
-            mid-distance (my main event is the 800m). I'm also an adept
-            programmer (my tools of choice are Python, TypeScript, and Rust).
-          </p>
+            <p>
+              Outside of class, I captain the varsity track team where I run
+              mid-distance (my main event is the 800m). I'm also an adept
+              programmer (my tools of choice are Python, TypeScript, and Rust).
+            </p>
 
-          <p>
-            If you have a job for which you think I'd be a good fit,{" "}
-            <a href="mailto:pattisona@carleton.edu">send me an email</a>!
-          </p>
+            <p>
+              If you have a job for which you think I'd be a good fit,{" "}
+              <a href="mailto:pattisona@carleton.edu">send me an email</a>!
+            </p>
+          </div>
         </section>
 
+        {/* -- CV -- */}
         <section id="cv" className="space-y-3">
           <h1 className="text-center text-4xl uppercase tracking-wide">
             Curriculum Vitae

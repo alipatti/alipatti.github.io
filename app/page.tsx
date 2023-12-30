@@ -111,10 +111,6 @@ export default function Home() {
               programmer (my tools of choice are Python, TypeScript, and Rust).
             </p>
 
-            <p>
-              If you have a job for which you think I'd be a good fit,{" "}
-              <a href="mailto:pattisona@carleton.edu">send me an email</a>!
-            </p>
           </div>
         </section>
 

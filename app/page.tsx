@@ -98,11 +98,11 @@ export default function Home() {
           <h1 className="mb-8 text-4xl uppercase tracking-wide">About</h1>
           <div className="mx-auto max-w-lg">
             <p>
-              I'm a senior undergraduate with a broad interest in work that
-              blends the real-world impact of statistics and economics with the
-              uncompromising rigor of pure mathematics. Recently, this has taken
-              the form of statistical consulting and research in algorithms and
-              cryptography. I'm particularly interested in machine learning.
+              I'm a senior undergraduate with broad interest in work that blends
+              the impact of statistics and computer science with the rigor of
+              mathematics. Recently, this has taken the form of statistical
+              consulting and research in algorithms and cryptography. I'm
+              particularly interested in machine learning.
             </p>
 
             <p>
@@ -110,7 +110,6 @@ export default function Home() {
               mid-distance (my main event is the 800m). I'm also an adept
               programmer (my tools of choice are Python, TypeScript, and Rust).
             </p>
-
           </div>
         </section>
 

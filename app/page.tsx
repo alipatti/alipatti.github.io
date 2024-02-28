@@ -14,7 +14,7 @@ export default function Home() {
         <hr className="mx-auto hidden h-px w-60 border-0 bg-gray-700 dark:bg-gray-100 xl:block" />
 
         <div className="flex flex-col items-center">
-          <div className="flex flex-col items-center gap-10 xl:flex-row">
+          <div className="flex flex-col items-center gap-20 xl:flex-row">
             {/* -- HEADSHOT -- */}
             <Image
               className="aspect-square rounded-full object-cover object-left-top"
@@ -41,8 +41,7 @@ export default function Home() {
                 >
                   running in circles
                 </a>
-                . Sometimes I write{" "}
-                <a href="https://github.com/alipatti">code</a>.
+                .
               </p>
 
               {/* -- SOCIAL LINKS -- */}

@@ -22,7 +22,8 @@ export default function RootLayout({
       <body
         className={
           karla.className +
-          "bg-brown/10 flex min-h-screen flex-col text-gray-800 dark:bg-gray-800 dark:text-gray-100"
+          " " +
+          "bg-lightgreen/10 flex min-h-screen flex-col text-gray-800 dark:bg-gray-800 dark:text-gray-100"
         }
       >
         {/* NAVIGATION BAR */}

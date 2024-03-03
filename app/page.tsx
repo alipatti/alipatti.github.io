@@ -55,7 +55,7 @@ export default function Home() {
         <canvas ref={ref} className="absolute top-[-3.5em] z-[-1] dark:invert blur-[1px]" />
 
         {/* --- CARD --- */}
-        <div className="absolute left-1/2 top-10 flex min-w-[40rem] -translate-x-1/2 flex-col items-center justify-start gap-10 rounded px-20 py-10 text-center xl:top-20 xl:max-w-6xl xl:gap-5 xl:pt-20">
+        <div className="flex min-w-[40rem] flex-col items-center justify-start gap-10 rounded px-20 pt-20 text-center xl:max-w-6xl xl:gap-5 2xl:pt-40 mx-auto">
           <h1 className="text-6xl">Alistair Pattison</h1>
 
           <hr className="mx-auto hidden h-px w-60 border-0 bg-gray-700 dark:bg-gray-100 2xl:block" />
@@ -64,7 +64,7 @@ export default function Home() {
             <div className="flex flex-col items-center gap-20 2xl:flex-row">
               {/* -- HEADSHOT -- */}
               <Image
-                className="aspect-square rounded-full object-cover object-left-top"
+                className="aspect-square rounded-full object-cover object-left-top shadow-md"
                 src={"/me.jpeg"}
                 alt="Alistair in the Austrian Alps."
                 height={280}
@@ -72,7 +72,7 @@ export default function Home() {
               ></Image>
 
               {/* -- SHORT BIO -- */}
-              <div className="max-w-lg space-y-10 text-center">
+              <div className="max-w-md space-y-10 text-center">
                 <p>
                   I'm a student at{" "}
                   <a

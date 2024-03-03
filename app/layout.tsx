@@ -22,28 +22,33 @@ export default function RootLayout({
       <body
         className={
           karla.className +
-          " bg-brown/10 text-gray-800 dark:bg-gray-800 dark:text-gray-100"
+          "bg-brown/10 flex min-h-screen flex-col text-gray-800 dark:bg-gray-800 dark:text-gray-100"
         }
       >
         {/* NAVIGATION BAR */}
         <nav
-          className={`bg-lightgreen/10 px-6 py-3 font-mono text-lg h-[${headerHeight}] flex items-center`}
+          className={`from-lightgreen dark:from-darkgreen bg-gradient-to-br from-30% px-6 py-3 font-mono text-lg h-[${headerHeight}] flex items-center`}
         >
           <ul className="flex items-baseline gap-10">
-            <a href="/">
+            <a href="/" className="text-lightblue">
               <li>alipatti.com</li>
             </a>
           </ul>
         </nav>
 
         {/* MAIN CONTENT */}
-        {children}
+        <main className="grow">{children}</main>
 
-        <footer className="bg-darkgreen/70 dark:text-lightblue/50 p-5 text-center text-sm font-light text-white/60">
+        <footer className="bg-darkgreen/70 dark:text-lightblue/50 z-50 p-5 text-center text-sm font-light text-white/60">
           <span className="mb-3 block">
             Made with Next.js and Tailwind CSS (
-            <a href="https://github.com/alipatti/alipatti.github.io" className="hover:underline">source</a>)
-            .
+            <a
+              href="https://github.com/alipatti/alipatti.github.io"
+              className="hover:underline"
+            >
+              source
+            </a>
+            ) .
           </span>
 
           <hr className="mx-auto mb-3 w-10 opacity-10 dark:opacity-5" />

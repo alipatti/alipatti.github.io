@@ -5,7 +5,7 @@ import { useWindowSize } from "@uidotdev/usehooks";
 
 import { isMandelbrot, randomLocation } from "./mandelbrot";
 
-import { FaFile, FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaFile, FaFilePdf, FaGithub, FaLinkedin } from "react-icons/fa";
 import Image from "next/image";
 import CV from "./cv";
 
@@ -15,7 +15,7 @@ export default function Home() {
   let { width, height } = useWindowSize();
   const maxIters = 100;
 
-  const [center, setCenter] = useState([.2, -1]); // real, im
+  const [center, setCenter] = useState([0.2, -1]); // real, im
   const [zoom, setZoom] = useState(20);
 
   useEffect(() => {
@@ -52,10 +52,13 @@ export default function Home() {
     <main>
       <section id="bio" className="relative min-h-[calc(100vh-3.5rem)]">
         {/* --- MANDELBROT --- */}
-        <canvas ref={ref} className="absolute top-[-3.5em] z-[-1] dark:invert blur-[1px]" />
+        <canvas
+          ref={ref}
+          className="absolute top-[-3.5em] z-[-1] blur-[1px] dark:invert"
+        />
 
         {/* --- CARD --- */}
-        <div className="flex min-w-[40rem] flex-col items-center justify-start gap-10 rounded px-20 pt-20 text-center xl:max-w-6xl xl:gap-5 2xl:pt-40 mx-auto">
+        <div className="mx-auto flex min-w-[40rem] flex-col items-center justify-start gap-10 rounded px-20 pt-20 text-center xl:max-w-6xl xl:gap-5 2xl:pt-40">
           <h1 className="text-6xl">Alistair Pattison</h1>
 
           <hr className="mx-auto hidden h-px w-60 border-0 bg-gray-700 dark:bg-gray-100 2xl:block" />
@@ -74,21 +77,32 @@ export default function Home() {
               {/* -- SHORT BIO -- */}
               <div className="max-w-md space-y-10 text-center">
                 <p>
-                  I'm a student at{" "}
+                  I'm a predoctoral fellow for{" "}
+                  <a href="https://opportunityinsights.org">
+                    Opportunity Insights
+                  </a>
+                  , a research group at Harvard that uses big data to identify
+                  barriers to social mobility in the U.S. with the goal of
+                  reviving the American dream. Previously, I studied math and
+                  statistics at{" "}
                   <a
                     target="_blank"
                     href="https://www.startribune.com/minnesota-winter-weather-temperature-cold-north-pole/600114153/"
                   >
                     Carleton College
                   </a>{" "}
-                  where I study math and spend a lot of time{" "}
+                  where I also spent a lot of time{" "}
                   <a
                     target="_blank"
-                    href="https://athletics.carleton.edu/news/2023/2/11/mens-track-and-field-knights-win-7-times-at-the-meet-of-the-hearts.aspx"
+                    href="https://athletics.carleton.edu/news/2024/5/10/mens-track-and-field-2024-miac-outdoor-championships-day-1.aspx"
                   >
                     running in circles
                   </a>
                   .
+                </p>
+                <p>
+                  If for some reason you'd like to learn more about me, you can find more
+                  at the links below.
                 </p>
 
                 {/* -- SOCIAL LINKS -- */}
@@ -110,11 +124,18 @@ export default function Home() {
                     <FaLinkedin className="inline" />{" "}
                     <span className="pl-2">linkedin</span>
                   </a>
+                  <a
+                    className="button hover:shadow"
+                    href="https://github.com/alipatti/cv/releases/latest/download/pattison-cv-full.pdf"
+                  >
+                    <FaFilePdf className="inline" />{" "}
+                    <span className="pl-2">cv</span>
+                  </a>
                 </div>
               </div>
             </div>
 
-            {/* -- DOWN ARROWS -- */}
+            {/*
             <div className="mt-20">
               <a
                 className="text-lightgreen duration-1000 hover:scale-110"
@@ -129,15 +150,16 @@ export default function Home() {
                 </div>
               </a>
             </div>
+           */}
           </div>
         </div>
       </section>
 
+      {/*  
       <div
         id="bottom"
         className="bg-lightgreen/30 children:py-20 4xl:justify-around children:flex-grow relative flex min-h-screen flex-col items-center px-5 pt-10 2xl:flex-row 2xl:items-start"
       >
-        {/* -- LONGER BIO -- */}
         <section
           id="about"
           className="dark:children-p:font-light top-[20%] space-y-3 text-center after:absolute after:right-0 after:top-1/4 after:h-1/2 after:border-r-gray-400/50 dark:after:opacity-50 2xl:sticky 2xl:after:border-r"
@@ -160,7 +182,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* -- CV -- */}
         <section id="cv" className="space-y-3">
           <h1 className="text-center text-4xl uppercase tracking-wide">
             Curriculum Vitae
@@ -179,6 +200,7 @@ export default function Home() {
           </div>
         </section>
       </div>
+      */}
     </main>
   );
 }

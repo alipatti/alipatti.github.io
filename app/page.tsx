@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { useWindowSize } from "@uidotdev/usehooks";
 
-import { isMandelbrot, randomLocation } from "./mandelbrot";
+import { isMandelbrot } from "./mandelbrot";
 
 import { FaFile, FaFilePdf, FaGithub, FaLinkedin } from "react-icons/fa";
 import Image from "next/image";
@@ -40,7 +40,7 @@ export default function Home() {
           imageData.data[i + 0] = 0; // R
           imageData.data[i + 1] = 0; // G
           imageData.data[i + 2] = 0; // B
-          imageData.data[i + 3] = iters == maxIters ? 0 : iters * 4;
+          imageData.data[i + 3] = iters == maxIters ? 20 : iters * 4; // alpha
         }
       }
 
@@ -58,24 +58,23 @@ export default function Home() {
         />
 
         {/* --- CARD --- */}
-        <div className="mx-auto flex min-w-[40rem] flex-col items-center justify-start gap-10 rounded px-20 pt-20 text-center xl:max-w-6xl xl:gap-5 2xl:pt-40">
+        <div className="mx-auto flex flex-col items-center justify-start gap-10 text-center xl:min-w-[40rem] xl:max-w-6xl xl:gap-5 2xl:pt-40 xl:pt-20 p-10">
           <h1 className="text-6xl">Alistair Pattison</h1>
 
-          <hr className="mx-auto hidden h-px w-60 border-0 bg-gray-700 dark:bg-gray-100 2xl:block" />
+          <hr className="mx-auto block h-px w-60 border-0 bg-gray-700 opacity-50 dark:bg-gray-500" />
 
           <div className="flex flex-col items-center">
             <div className="flex flex-col items-center gap-20 2xl:flex-row">
-              {/* -- HEADSHOT -- */}
               <Image
                 className="aspect-square rounded-full object-cover object-left-top shadow-md"
                 src={"/me.jpeg"}
-                alt="Alistair in the Austrian Alps."
+                alt="headshot"
                 height={280}
                 width={280}
               ></Image>
 
               {/* -- SHORT BIO -- */}
-              <div className="max-w-md space-y-10 text-center">
+              <div className="max-w-md space-y-5 text-center">
                 <p>
                   I'm a predoctoral fellow for{" "}
                   <a href="https://opportunityinsights.org">
@@ -101,38 +100,38 @@ export default function Home() {
                   .
                 </p>
                 <p>
-                  If for some reason you'd like to learn more about me, you can find more
-                  at the links below.
+                  If for some reason you'd like to learn more about me, you can
+                  find more at the links below.
                 </p>
-
-                {/* -- SOCIAL LINKS -- */}
-                <div
-                  id="links"
-                  className="px-auto flex flex-wrap items-center justify-center gap-5 sm:gap-10"
-                >
-                  <a
-                    className="button hover:shadow"
-                    href="https://github.com/alipatti"
-                  >
-                    <FaGithub className="inline" />{" "}
-                    <span className="pl-2">github</span>
-                  </a>
-                  <a
-                    className="button hover:shadow"
-                    href="https://linkedin.com/in/alipatti"
-                  >
-                    <FaLinkedin className="inline" />{" "}
-                    <span className="pl-2">linkedin</span>
-                  </a>
-                  <a
-                    className="button hover:shadow"
-                    href="https://github.com/alipatti/cv/releases/latest/download/pattison-cv-full.pdf"
-                  >
-                    <FaFilePdf className="inline" />{" "}
-                    <span className="pl-2">cv</span>
-                  </a>
-                </div>
               </div>
+            </div>
+
+            {/* -- SOCIAL LINKS -- */}
+            <div
+              id="links"
+              className="px-auto mt-10 flex flex-wrap items-center justify-center gap-5 sm:gap-10"
+            >
+              <a
+                className="button hover:shadow"
+                href="https://github.com/alipatti"
+              >
+                <FaGithub className="inline" />{" "}
+                <span className="pl-2">github</span>
+              </a>
+              <a
+                className="button hover:shadow"
+                href="https://linkedin.com/in/alipatti"
+              >
+                <FaLinkedin className="inline" />{" "}
+                <span className="pl-2">linkedin</span>
+              </a>
+              <a
+                className="button hover:shadow"
+                href="https://github.com/alipatti/cv/releases/latest/download/pattison-cv-full.pdf"
+              >
+                <FaFilePdf className="inline" />{" "}
+                <span className="pl-2">cv</span>
+              </a>
             </div>
 
             {/*

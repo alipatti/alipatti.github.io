@@ -1,40 +1,26 @@
 {
-  "name": "alipatti-portfolio",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "yarn next dev",
-    "build": "yarn next build",
-    "clean": "rm -rf .next node_modules out"
-  },
-  "dependencies": {
-    "@types/js-yaml": "^4.0.9",
-    "@types/node": "20.2.1",
-    "@types/react": "18.2.6",
-    "@types/react-dom": "^18.0.11",
-    "@uidotdev/usehooks": "^2.4.1",
-    "autoprefixer": "^10.4.14",
-    "eslint": "^8.38.0",
-    "eslint-config-next": "^13.3.0",
-    "gray-matter": "^4.0.3",
-    "js-yaml": "^4.1.0",
-    "next": "^14.0.4",
-    "node": "^21.2.0",
-    "postcss": "^8.4.21",
-    "prettier": "^2.8.7",
-    "prettier-plugin-tailwindcss": "^0.2.7",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-icons": "^4.12.0",
-    "rehype-stringify": "^9.0.3",
-    "remark": "^14.0.3",
-    "remark-gfm": "^3.0.1",
-    "remark-rehype": "^10.1.0",
-    "tailwind-children": "^0.5.0",
-    "tailwindcss": "^3.3.1",
-    "tailwindcss-opentype": "^1.1.0",
-    "typescript": "5.0.4",
-    "unified": "^10.1.2",
-    "yaml": "^2.3.1"
-  }
+	"name": "alipatti.github.io",
+	"private": true,
+	"version": "0.0.1",
+	"type": "module",
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"preview": "vite preview",
+		"prepare": "svelte-kit sync || echo ''",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch"
+	},
+	"devDependencies": {
+		"@sveltejs/adapter-auto": "^4.0.0",
+		"@sveltejs/kit": "^2.16.0",
+		"@sveltejs/vite-plugin-svelte": "^5.0.0",
+		"@tailwindcss/vite": "^4.0.0",
+		"mdsvex": "^0.12.3",
+		"svelte": "^5.0.0",
+		"svelte-check": "^4.0.0",
+		"tailwindcss": "^4.0.0",
+		"typescript": "^5.0.0",
+		"vite": "^6.2.5"
+	}
 }

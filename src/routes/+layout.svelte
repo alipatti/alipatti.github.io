@@ -1,11 +1,12 @@
 <script lang="ts">
   import "../app.css";
-
   let { children } = $props();
 </script>
 
-<div class="min-h-screen flex flex-col">
-  <nav class="bg-white/50 px-6 py-3 text-lg absolute w-full">
+<div
+  class="min-h-screen flex flex-col grow text-neutral-800 dark:bg-neutral-800 dark:text-neutral-100 relative"
+>
+  <nav class="bg-white/50 px-6 py-3 text-lg w-full">
     <ul class="flex items-baseline gap-10">
       <a href="/" class="text-red-500">
         <li class="font-mono">alipatti.com</li>
@@ -13,11 +14,7 @@
     </ul>
   </nav>
 
-  <div
-    class="grow text-neutral-800 dark:bg-neutral-800 dark:text-neutral-100"
-  >
-    {@render children()}
-  </div>
+  {@render children()}
 </div>
 
 <footer

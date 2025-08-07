@@ -1,6 +1,7 @@
 <script lang="ts">
   import headshot from "$lib/assets/headshot.jpeg";
-  import { isMandelbrot } from "$lib/mandelbrot.ts";
+
+  import { isMandelbrot } from "$lib/mandelbrot";
   import { innerWidth } from "svelte/reactivity/window";
 
   const maxIters = 100;
@@ -39,13 +40,13 @@
   });
 </script>
 
-<main class="min-h-screen relative">
-  <canvas
-    class="absolute blur-[2px] dark:invert-75 w-full h-full"
-    bind:this={canvas}
-  ></canvas>
+<canvas
+  class="absolute blur-[2px] dark:invert-75 w-full h-full"
+  bind:this={canvas}
+></canvas>
 
-  <section id="bio" class="min-h-screen">
+<main>
+  <section id="bio">
     <div
       class="mx-auto flex flex-col items-center justify-start gap-10 text-center xl:min-w-[40rem] xl:max-w-6xl xl:gap-5 2xl:pt-40 xl:pt-20 p-10"
     >

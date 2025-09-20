@@ -1,31 +1,23 @@
-/node_modules
+node_modules
 
-# next.js
-/.next/
-/out/
+# Output
+.output
+.vercel
+.netlify
+.wrangler
+/.svelte-kit
 /build
 
-# fuck this file
+# OS
 .DS_Store
+Thumbs.db
 
-# logs
-*log*
+# Env
+.env
+.env.*
+!.env.example
+!.env.test
 
-# local env files
-.env*.local
-
-# typescript
-*.tsbuildinfo
-next-env.d.ts
-
-# latex
-*.fls
-*.log
-*.out
-*.aux
-*.synctex*
-*.fdb*
-*.bbl
-*.bcf
-*.blg
-*.run.xml
+# Vite
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*

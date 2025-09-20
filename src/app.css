@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,700&display=swap");
+@import 'tailwindcss';
+
+:root {
+    font-family: Karla, Arial, Helvetica, sans-serif
+}
+
+@plugin "tailwind-children";
+
+
+/* --- THEMING --- */
+
+@theme {
+    --color-lightgreen: #618081;
+    --color-darkgreen: #273940;
+    --color-blue: #006d9a;
+    --color-lightblue: #78c2e2;
+    --color-brown: #54413e;
+}
+
+/* --- ICONS --- */
+
+@plugin "@iconify/tailwind4" {
+    prefix: icon;
+    prefixes: fa, fa-solid;
+}
+
+[class*="fa-"]:not([class*="iconify-color"]) {
+    @apply iconify;
+    @apply -mb-[1.5pt]
+}
+
+
+/* --- STYLING --- */
+
+
+h2 {
+    @apply font-semibold tracking-wide text-2xl mt-3 mb-1
+    /* small-caps */
+}
+
+h3 {
+    @apply font-bold mb-1
+}
+
+ul a,
+li a,
+p a {
+    @apply text-blue dark:text-lightblue hover:underline;
+}
+
+p {
+    @apply mb-3;
+}
+
+.button {
+    @apply bg-lightgreen rounded px-3 py-2 text-gray-100;
+}

@@ -32,11 +32,6 @@
       <span class="fa--github"></span>
       <span>github.com/alipatti</span>
     </a>
-
-    <a href="https://instagram.com/a1ipatti">
-      <span class="fa--instagram"></span>
-      <span>instagram.com/a1ipatti</span>
-    </a>
   </div>
 
   <hr class="mx-auto mb-3 w-10 opacity-10 dark:opacity-5" />

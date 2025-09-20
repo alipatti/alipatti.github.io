@@ -1,6 +1,4 @@
 <script lang="ts">
-  import headshot from "$lib/assets/headshot.jpeg";
-
   import { isMandelbrot } from "$lib/mandelbrot";
   import { innerWidth } from "svelte/reactivity/window";
 
@@ -41,7 +39,7 @@
 </script>
 
 <canvas
-  class="absolute blur-[2px] dark:invert-75 w-full h-full"
+  class="absolute blur-[2px] dark:invert-75 w-full h-full -z-10"
   bind:this={canvas}
 ></canvas>
 
@@ -60,7 +58,7 @@
         <div class="flex flex-col items-center gap-20 2xl:flex-row">
           <img
             class="aspect-square rounded-full object-cover object-left-top shadow-md"
-            src={headshot}
+            src="headshot.jpeg"
             alt="headshot"
             height={280}
             width={280}
@@ -68,18 +66,17 @@
 
           <div class="max-w-md space-y-5 text-center">
             <p>
-              I'm a predoctoral fellow for <a
+              I'm a predoctoral fellow at <a
                 href="https://opportunityinsights.org">Opportunity Insights</a
-              >, a research group at Harvard that uses big data to identify
-              barriers to social mobility in the U.S. with the goal of reviving
-              the American dream. Previously, I studied math and statistics at
+              >, a group at Harvard using big data to uncover barriers to class mobility in the U.S. with the goal of reviving the American Dream.
+              Previously, I studied math and statistics at
               <a
                 target="_blank"
                 href="https://www.startribune.com/minnesota-winter-weather-temperature-cold-north-pole/600114153/"
               >
                 Carleton College
               </a>
-              in Minnesota where I also spent a lot of time
+              where I also spent a lot of time <a target="_blank" href="https://github.com/alipatti">coding</a> and
               <a
                 target="_blank"
                 href="https://athletics.carleton.edu/news/2024/5/10/mens-track-and-field-2024-miac-outdoor-championships-day-1.aspx"

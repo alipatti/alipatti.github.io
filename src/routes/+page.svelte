@@ -76,7 +76,7 @@
               >
                 Carleton College
               </a>
-              where I also spent a lot of time <a target="_blank" href="https://github.com/alipatti">coding</a> and
+              where I also spent a lot of time
               <a
                 target="_blank"
                 href="https://athletics.carleton.edu/news/2024/5/10/mens-track-and-field-2024-miac-outdoor-championships-day-1.aspx"

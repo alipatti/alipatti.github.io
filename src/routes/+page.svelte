@@ -39,7 +39,7 @@
 </script>
 
 <canvas
-  class="absolute blur-[2px] dark:invert-75 w-full h-full -z-10"
+  class="absolute blur-[2px] dark:invert w-full h-full pointer-events-none animate-fadein delay-300"
   bind:this={canvas}
 ></canvas>
 

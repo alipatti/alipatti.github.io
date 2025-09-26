@@ -1,49 +1,4 @@
-<script lang="ts">
-  import { isMandelbrot } from "$lib/mandelbrot";
-  import { innerWidth } from "svelte/reactivity/window";
-
-  const maxIters = 100;
-
-  let canvas: HTMLCanvasElement;
-
-  const center = [0.2, -1]; // real, im
-  const zoom = 2000;
-
-  $effect(() => {
-    innerWidth.current; // reference so effect re-runs when window resizes
-
-    canvas.width = canvas.offsetWidth;
-    canvas.height = canvas.offsetHeight;
-
-    const w = canvas.width;
-    const h = canvas.height;
-
-    const context = canvas.getContext("2d")!;
-    const imageData = context.createImageData(w, h);
-
-    for (let x = 0; x < w; x += 1) {
-      for (let y = 0; y < h; y += 1) {
-        let iters = isMandelbrot(
-          center[0] + (x - w / 2) / zoom,
-          -center[1] + (y - h / 2) / zoom,
-          maxIters,
-        );
-
-        const i = (x + y * w) * 4;
-        imageData.data[i + 3] = iters == maxIters ? 20 : iters * 4; // alpha
-      }
-    }
-
-    context.putImageData(imageData, 0, 0);
-  });
-</script>
-
-<canvas
-  class="absolute blur-[2px] dark:invert w-full h-full pointer-events-none animate-fadein delay-300"
-  bind:this={canvas}
-></canvas>
-
-<main>
+<main class="z-10">
   <section id="bio">
     <div
       class="mx-auto flex flex-col items-center justify-start gap-10 text-center xl:min-w-[40rem] xl:max-w-6xl xl:gap-5 2xl:pt-40 xl:pt-20 p-10"
@@ -68,7 +23,8 @@
             <p>
               I'm a predoctoral fellow at <a
                 href="https://opportunityinsights.org">Opportunity Insights</a
-              >, a group at Harvard using big data to uncover barriers to class mobility in the U.S. with the goal of reviving the American Dream.
+              >, a group at Harvard using big data to uncover barriers to class
+              mobility in the U.S. with the goal of reviving the American Dream.
               Previously, I studied math and statistics at
               <a
                 target="_blank"

@@ -41,7 +41,9 @@
     context.putImageData(imageData, 0, 0);
   });
 
-  const blur_radius = $derived(page.url.pathname == "/" ? "blur-[5px]" : "blur-xl");
+  const backgroud_blur_tailwind_class = $derived(
+    page.url.pathname == "/" ? "blur-[5px]" : "blur-xl",
+  );
 </script>
 
 <div
@@ -52,14 +54,18 @@
       <li class="font-mono text-blue dark:text-lightblue">
         <a href="/">Alistair Pattison</a>
       </li>
-      <span class="opacity-20 italic font-light">|</span>
 
+      <span class="opacity-20 italic font-light">|</span>
       <li>
         <a href="/">home</a>
       </li>
-      <li>
-        <a href="/code">code</a>
-      </li>
+
+      {#each ["about", "code"] as slug}
+        <span class="opacity-20 italic font-light">|</span>
+        <li>
+          <a href="/{slug}">{slug}</a>
+        </li>
+      {/each}
 
       <!--social links on the right-hand side of the nav bar-->
       <li class="ml-auto fa--linkedin-square text-neutral-300 hover:text-blue">
@@ -73,7 +79,7 @@
 
   <canvas
     id="background"
-    class="absolute dark:invert w-full h-full pointer-events-none animate-fadein {blur_radius}"
+    class="absolute dark:invert w-full h-full pointer-events-none animate-fadein {backgroud_blur_tailwind_class}"
     bind:this={canvas}
     style:transition="filter .2s"
   ></canvas>

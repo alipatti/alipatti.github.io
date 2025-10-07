@@ -26,13 +26,18 @@
 
 [class*="fa-"]:not([class*="iconify-color"]) {
   @apply iconify;
-  @apply -mb-[1.5pt];
+  @apply -mb-[2pt];
 }
 
 /* --- STYLING --- */
 
+h1 {
+  @apply font-semibold tracking-wide text-5xl mt-3 mb-5
+    /* small-caps */;
+}
+
 h2 {
-  @apply font-semibold tracking-wide text-2xl mt-3 mb-1
+  @apply font-semibold tracking-wide text-2xl mt-3 mb-2
     /* small-caps */;
 }
 
@@ -40,10 +45,14 @@ h3 {
   @apply font-bold mb-1;
 }
 
+p a {
+  @apply text-blue dark:text-lightblue
+}
+
 ul a,
 li a,
 p a {
-  @apply text-blue dark:text-lightblue hover:underline;
+  @apply hover:underline;
 }
 
 p {
@@ -67,5 +76,5 @@ p {
 }
 
 .animate-fadein {
-  animation: fadeIn 2s ease-in-out forwards;
+  animation: fadeIn 1.5s ease-in-out forwards;
 }

@@ -35,7 +35,7 @@
   let repo_promise = get_data();
 </script>
 
-<div class="p-20 max-w-5xl mx-auto min-w-3xl">
+<main class="p-20 max-w-5xl mx-auto min-w-3xl">
   <h1>Code</h1>
   <!-- <p>Below is a collection of code I've written over the years.</p> -->
   <div>
@@ -54,4 +54,4 @@
       <p>Failed to get GitHub repos.</p>
     {/await}
   </div>
-</div>
+</main>

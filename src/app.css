@@ -29,24 +29,32 @@
   @apply -mb-[2pt];
 }
 
-/* --- STYLING --- */
+/* --- HEADINGS --- */
 
 h1 {
-  @apply font-semibold tracking-wide text-5xl mt-3 mb-5
-    /* small-caps */;
+  @apply font-semibold tracking-wide text-5xl mt-3 mb-5;
 }
 
 h2 {
-  @apply font-semibold tracking-wide text-2xl mt-3 mb-2
-    /* small-caps */;
+  @apply font-semibold tracking-wide text-2xl mt-3 mb-2;
 }
 
 h3 {
   @apply font-bold mb-1;
 }
 
+/* run-in h5 */
+
+h5 {
+  @apply font-bold inline;
+}
+
+h5+p {
+  @apply inline ml-2;
+}
+
 p a {
-  @apply text-blue dark:text-lightblue
+  @apply text-blue dark:text-lightblue;
 }
 
 ul a,
@@ -57,6 +65,10 @@ p a {
 
 p {
   @apply mb-3;
+}
+
+hr {
+  @apply mx-auto opacity-50 overflow-visible w-1/2;
 }
 
 .button {

@@ -4,15 +4,16 @@
 
   const username = "alipatti";
   const categories = {
-    "Data Science": ["polars_rng", "polars_io", "polars_utils"],
+    Statistics: ["gam-rs", "polars_rng"],
+    "Data Science": ["quicklook", "polars_io", "polars_cache", "tidycensus"],
     "Command-line Tools": ["cite", "oeis.rs", "todo.swift"],
-    Miscellaneous: ["dotfiles", "quicklook"],
+    Miscellaneous: ["dotfiles", "cv"],
   };
 
   type RepoProps = ComponentProps<typeof Repo>[];
 
   const get_data = async () => {
-    const url = `https://api.github.com/users/${username}/repos`;
+    const url = `https://api.github.com/users/${username}/repos?per_page=100`;
     const response = await fetch(url);
     const json: RepoProps = await response.json();
 

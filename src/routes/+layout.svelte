@@ -42,7 +42,7 @@
   });
 
   const backgroud_blur_tailwind_class = $derived(
-    page.url.pathname == "/" ? "blur-[5px]" : "blur-xl",
+    page.url.pathname == "/" ? "blur-[5px]" : "blur-[50px]",
   );
 </script>
 
@@ -60,7 +60,8 @@
         <a href="/">home</a>
       </li>
 
-      {#each ["about", "code"] as slug}
+      <!-- {#each ["about", "code"] as slug} -->
+      {#each ["code"] as slug}
         <span class="opacity-20 italic font-light">|</span>
         <li>
           <a href="/{slug}">{slug}</a>
@@ -79,9 +80,9 @@
 
   <canvas
     id="background"
-    class="absolute dark:invert w-full h-full pointer-events-none animate-fadein {backgroud_blur_tailwind_class}"
+    class="fixed dark:invert w-full h-full pointer-events-none animate-fadein {backgroud_blur_tailwind_class}"
     bind:this={canvas}
-    style:transition="filter .2s"
+    style:transition="filter .4s"
   ></canvas>
 
   {@render children()}

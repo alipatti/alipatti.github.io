@@ -52,7 +52,8 @@
   <nav class="bg-white/60 dark:bg-neutral-600/60 px-6 py-3 text-xl w-full z-20">
     <ul class="flex items-baseline gap-5 justify-between">
       <li class="font-mono text-blue dark:text-lightblue">
-        <a href="/">Alistair Pattison</a>
+        <a href="/" class="hidden md:block">Alistair Pattison</a>
+        <a href="/" class="block md:hidden">AP</a>
       </li>
 
       <span class="opacity-20 italic font-light">|</span>
@@ -69,12 +70,15 @@
       {/each}
 
       <!--social links on the right-hand side of the nav bar-->
-      <li class="ml-auto fa--linkedin-square text-neutral-300 hover:text-blue">
-        <a href="https://linkedin.com/in/alipatti"></a>
-      </li>
-      <li class="fa--github text-neutral-300 hover:text-blue">
-        <a href="https://github.com/alipatti"> </a>
-      </li>
+      <div class="ml-auto"></div>
+      <div class="space-x-5 hidden lg:block">
+        <a href="https://linkedin.com/in/alipatti" aria-label="linkedin">
+          <li class="fa--linkedin-square text-neutral-300 hover:text-blue"></li>
+        </a>
+        <a href="https://github.com/alipatti" aria-label="github">
+          <li class="fa--github text-neutral-300 hover:text-blue"></li>
+        </a>
+      </div>
     </ul>
   </nav>
 

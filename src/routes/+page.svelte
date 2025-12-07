@@ -1,18 +1,18 @@
 <main class="z-10">
   <section id="bio">
     <div
-      class="mx-auto flex flex-col items-center justify-start gap-10 text-center xl:min-w-[40rem] xl:max-w-6xl xl:gap-5 2xl:pt-40 xl:pt-20 p-10"
+      class="mx-auto flex flex-col items-center justify-start sm:gap-10 xl:gap-5 text-center xl:min-w-[40rem] xl:max-w-6xl xl:pt-40 p-10"
     >
-      <span class="text-6xl">Alistair Pattison</span>
+      <span class="text-4xl sm:text-5xl xl:text-6xl">Alistair Pattison</span>
 
       <hr
-        class="mx-auto block h-px max-w-60 border-0 bg-neutral-700 opacity-50 dark:bg-neutral-500"
+        class="mx-auto h-px hidden md:block max-w-60 border-0 bg-neutral-700 opacity-50 dark:bg-neutral-500"
       />
 
       <div class="flex flex-col items-center">
-        <div class="flex flex-col items-center gap-20 2xl:flex-row">
+        <div class="flex flex-col items-center sm:gap-20 xl:flex-row">
           <img
-            class="aspect-square rounded-full object-cover object-left-top shadow-md"
+            class="aspect-square rounded-full object-cover object-left-top shadow-md scale-75 sm:scale-none"
             src="headshot.jpeg"
             alt="headshot"
             height={280}
@@ -23,8 +23,9 @@
             <p>
               I'm a predoctoral fellow at <a
                 href="https://opportunityinsights.org">Opportunity Insights</a
-              >, a group at Harvard that uses big data to study economic
-              opportunity in the United States. Previously, I studied math and statistics at
+              >, Harvard economics lab that uses big data to research class
+              mobility in the United States. Previously, I studied math and
+              statistics at
               <a
                 target="_blank"
                 href="https://www.startribune.com/minnesota-winter-weather-temperature-cold-north-pole/600114153/"
@@ -49,7 +50,7 @@
 
         <div
           id="links"
-          class="px-auto mt-10 flex flex-wrap items-center justify-center gap-5 sm:gap-10"
+          class="px-auto mt-10 flex flex-wrap flex-row items-center justify-center gap-10"
         >
           <a class="button hover:shadow" href="https://github.com/alipatti">
             <span class="fa--github"></span>

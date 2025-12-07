@@ -24,8 +24,7 @@
               I'm a predoctoral fellow at <a
                 href="https://opportunityinsights.org">Opportunity Insights</a
               >, a group at Harvard that uses big data to study economic
-              opportunity in the U.S. with the goal of reviving the American
-              Dream. Previously, I studied math and statistics at
+              opportunity in the United States. Previously, I studied math and statistics at
               <a
                 target="_blank"
                 href="https://www.startribune.com/minnesota-winter-weather-temperature-cold-north-pole/600114153/"
@@ -65,7 +64,7 @@
           </a>
           <a
             class="button hover:shadow"
-            href="https://github.com/alipatti/cv/releases/latest/download/pattison-cv-full.pdf"
+            href="https://alipatti.com/cv/pattison-cv.pdf"
           >
             <span class="fa-solid--file-pdf"></span>
             <span class="pl-2">cv</span>

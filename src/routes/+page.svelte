@@ -1,25 +1,25 @@
 <main class="z-10">
   <section id="bio">
     <div
-      class="mx-auto flex flex-col items-center justify-start sm:gap-10 xl:gap-5 text-center xl:min-w-[40rem] xl:max-w-6xl xl:pt-40 p-10"
+      class="mx-auto flex flex-col items-center justify-start gap-5 sm:gap-10 xl:gap-5 text-center xl:min-w-[40rem] xl:max-w-6xl xl:pt-40 p-10"
     >
-      <span class="text-4xl sm:text-5xl xl:text-6xl">Alistair Pattison</span>
+      <span class="text-[10vw] sm:text-6xl xl:text-6xl">Alistair Pattison</span>
 
       <hr
-        class="mx-auto h-px hidden md:block max-w-60 border-0 bg-neutral-700 opacity-50 dark:bg-neutral-500"
+        class="mx-auto h-px hidden xl:block max-w-60 border-0 bg-neutral-700 opacity-50 dark:bg-neutral-500"
       />
 
       <div class="flex flex-col items-center">
-        <div class="flex flex-col items-center sm:gap-20 xl:flex-row">
+        <div class="flex flex-col items-center gap-10 sm:gap-16 xl:gap-20 xl:flex-row">
           <img
-            class="aspect-square rounded-full object-cover object-left-top shadow-md scale-75 sm:scale-none"
+            class="aspect-square rounded-md xl:rounded-full object-cover object-left-top shadow-md"
             src="headshot.jpeg"
             alt="headshot"
             height={280}
             width={280}
           />
 
-          <div class="max-w-md space-y-5 text-center">
+          <div class="max-w-md space-y-5 text-left sm:text-center">
             <p>
               I'm a predoctoral fellow at <a
                 href="https://opportunityinsights.org">Opportunity Insights</a
@@ -57,7 +57,7 @@
             <span class="pl-2">github</span>
           </a>
           <a
-            class="button hover:shadow"
+            class="button hover:shadow hidden sm:block"
             href="https://linkedin.com/in/alipatti"
           >
             <span class="fa--linkedin-square"></span>

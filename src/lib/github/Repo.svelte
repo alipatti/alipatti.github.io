@@ -22,7 +22,7 @@
 </script>
 
 <div class="mb-4 w-full group">
-  <div class="flex justify-between -mb-2">
+  <div class="flex flex-col sm:flex-row justify-between -mb-2">
     <h3 class="group-hover:text-blue opacity-90">
       <span class="fa--github mr-2"></span>
       <a class="font-mono blue" href={repo.html_url}>{repo.full_name}</a>

@@ -61,13 +61,17 @@
         <a href="/">home</a>
       </li>
 
-      <!-- {#each ["about", "code"] as slug} -->
-      {#each ["code"] as slug}
+      {#each ["code", "research"] as slug}
         <span class="opacity-20 italic font-light">|</span>
         <li>
           <a href="/{slug}">{slug}</a>
         </li>
       {/each}
+
+      <span class="opacity-20 italic font-light">|</span>
+      <li>
+        <a href="https://alipatti.com/cv/pattison-cv.pdf">cv</a>
+      </li>
 
       <!--social links on the right-hand side of the nav bar-->
       <div class="ml-auto"></div>

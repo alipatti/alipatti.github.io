@@ -1,0 +1,59 @@
+- title: Polarization
+  summary:
+    # Political polarization is increasing, but the academic literature is
+    # divided on whether or not this trend is affective (i.e.,
+    # people don't like the other party) or ideological (i.e.,
+    # people hold fundamentally different beliefs).
+    In ongoing work, I provide evidence of rising ideological polarization in
+    the American public, driven mostly by increases in disagreement
+    within political parties.
+    # rather than the divergence of opinions between Democrats and Republicans.
+  pubs:
+    - title: Public Ideological Polarization
+      date: December 2025
+      arxiv: "2512.00955"
+      notes: Working paper
+
+- title: Health Inequality
+  summary:
+    Since graduating college, I've worked as a research assistant on a project
+    using social security death records and IRS tax returns to study the
+    relationship between income and life expectancy in the United States.
+  pubs:
+    - title:
+        Evolution of Racial and Socioeconomic Disparities in Life Expectancy in
+        the United States
+      with:
+        Raj Chetty, Janet Currie, John Friedman, Ines Guix, Nathan Hendren,
+        Hannes Schwandt, Michael Stepner, and others
+      notes: In preperation
+
+- title: Algorithms
+  summary:
+    At Carleton, I worked on a generalization of set cover where the universe
+    also contains elements that you don't want to cover.
+  pubs:
+    - title:
+        Maximizing the Margin Between Desirable and Undesirable Elements in a
+        Covering Problem
+      with:
+        Sophie Boileau, Andrew Hong, David Liben-Nowell, Anna N. Rafferty, and
+        Charlie Roslansky
+      date: October 2025
+      arxiv: "2507.03817"
+      notes: Under review
+
+- title: Cryptography
+  summary:
+    I spent two breaks in college working with professor Nicholas Hopper at the
+    University of Minnesota to develop a method for reporting abuse on encrypted
+    messaging apps while maintaining the guarantees of end-to-end encryption.
+  pubs:
+    - title: Comitee Moderation on Encrypted Messaging Platforms
+      with: Nicholas Hopper
+      date: May 2023
+      arxiv: "2306.01241"
+      notes: Extended abstract at IEEE S&P 2023
+    - title: Private Threshold Content Reporting for Encrypted Messages
+      with: Nicholas Hopper
+      notes: In preperation

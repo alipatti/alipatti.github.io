@@ -10,7 +10,9 @@
       />
 
       <div class="flex flex-col items-center">
-        <div class="flex flex-col items-center gap-10 sm:gap-16 xl:gap-20 xl:flex-row">
+        <div
+          class="flex flex-col items-center gap-10 sm:gap-16 xl:gap-20 xl:flex-row"
+        >
           <img
             class="aspect-square rounded-md xl:rounded-full object-cover object-left-top shadow-md"
             src="headshot.jpeg"
@@ -21,11 +23,10 @@
 
           <div class="max-w-md space-y-5 text-left sm:text-center">
             <p>
-              I'm a predoctoral fellow at <a
+              I'm a predoctoral fellow for <a
                 href="https://opportunityinsights.org">Opportunity Insights</a
-              >, Harvard economics lab that uses big data to research class
-              mobility in the United States. Previously, I studied math and
-              statistics at
+              >, a group at Harvard using big data to research class mobility
+              in the United States. Previously, I studied math and statistics at
               <a
                 target="_blank"
                 href="https://www.startribune.com/minnesota-winter-weather-temperature-cold-north-pole/600114153/"

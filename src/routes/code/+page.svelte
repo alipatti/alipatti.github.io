@@ -17,8 +17,6 @@
     const response = await fetch(url);
     const json: RepoProps = await response.json();
 
-    console.log(json.map(({ name }) => name));
-
     if (response.status == 403) {
       throw response;
     }
@@ -36,7 +34,7 @@
   let repo_promise = get_data();
 </script>
 
-<main class="p-5 sm:p-20 max-w-5xl mx-auto md:min-w-3xl">
+<main class="p-5 sm:p-20 max-w-5xl mx-auto lg:w-4xl">
   <h1>Code</h1>
   <!-- <p>Below is a collection of code I've written over the years.</p> -->
   <div>

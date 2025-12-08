@@ -17,8 +17,6 @@
 
     return Object.keys(await res.json()).join(", ");
   };
-
-  console.log(repo.full_name);
 </script>
 
 <div class="mb-4 w-full group">

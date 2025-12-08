@@ -26,7 +26,7 @@
       with:
         Raj Chetty, Janet Currie, John Friedman, Ines Guix, Nathan Hendren,
         Hannes Schwandt, Michael Stepner, and others
-      notes: In preperation
+      notes: In preparation
 
 - title: Algorithms
   summary:
@@ -49,11 +49,11 @@
     University of Minnesota to develop a method for reporting abuse on encrypted
     messaging apps while maintaining the guarantees of end-to-end encryption.
   pubs:
-    - title: Comitee Moderation on Encrypted Messaging Platforms
+    - title: Committee Moderation on Encrypted Messaging Platforms
       with: Nicholas Hopper
       date: May 2023
       arxiv: "2306.01241"
       notes: Extended abstract at IEEE S&P 2023
     - title: Private Threshold Content Reporting for Encrypted Messages
       with: Nicholas Hopper
-      notes: In preperation
+      notes: In preparation

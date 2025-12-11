@@ -1,28 +1,25 @@
 - title: Polarization
   summary:
-    # Political polarization is increasing, but the academic literature is
-    # divided on whether or not this trend is affective (i.e.,
-    # people don't like the other party) or ideological (i.e.,
-    # people hold fundamentally different beliefs).
-    In ongoing work, I provide evidence of rising ideological polarization in
-    the American public, driven mostly by increases in disagreement
-    within political parties.
-    # rather than the divergence of opinions between Democrats and Republicans.
+    Interparty dislike is rising in the United States, but the literature is
+    divided on whether this has been accompanied by a divergence in people's
+    underlying ideology. In ongoing work, I propose a new measure of idological
+    polarization in the American public and demonstrate its increase over the
+    last several decades.
   pubs:
     - title: Public Ideological Polarization
       date: December 2025
       arxiv: "2512.00955"
       notes: Working paper
 
-- title: Health Inequality
+- title: Health Economics
   summary:
-    Since graduating college, I've worked as a research assistant on a project
-    using social security death records and IRS tax returns to study the
-    relationship between income and life expectancy in the United States.
+    After college, I worked as an RA on a project using social security death
+    records and IRS tax returns to study the relationship between income and
+    life expectancy in the United States.
   pubs:
     - title:
         Evolution of Racial and Socioeconomic Disparities in Life Expectancy in
-        the United States
+        the United States.
       with:
         Raj Chetty, Janet Currie, John Friedman, Ines Guix, Nathan Hendren,
         Hannes Schwandt, Michael Stepner, and others
@@ -30,8 +27,9 @@
 
 - title: Algorithms
   summary:
-    At Carleton, I worked on a generalization of set cover where the universe
-    also contains elements that you don't want to cover.
+    At Carleton, I studied a generalization of the set-cover problem where—in
+    addition desirable "good" elements—the universe contains "bad" elements that
+    one actively seeks to avoid.
   pubs:
     - title:
         Maximizing the Margin Between Desirable and Undesirable Elements in a
@@ -45,15 +43,16 @@
 
 - title: Cryptography
   summary:
-    I spent two breaks in college working with professor Nicholas Hopper at the
-    University of Minnesota to develop a method for reporting abuse on encrypted
-    messaging apps while maintaining the guarantees of end-to-end encryption.
+    In college, I helped develop a method for reporting abuse on messaging apps
+    that still maintains the guarantees of end-to-end encryption. I devised a
+    way for users to keep their privacy until their messages are reported many
+    times or by many different people.
   pubs:
     - title: Committee Moderation on Encrypted Messaging Platforms
       with: Nicholas Hopper
       date: May 2023
       arxiv: "2306.01241"
-      notes: Extended abstract at IEEE S&P 2023
+      notes: Extended abstract at IEEE S&P
     - title: Private Threshold Content Reporting for Encrypted Messages
       with: Nicholas Hopper
       notes: In preparation

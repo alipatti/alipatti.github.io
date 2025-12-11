@@ -11,7 +11,7 @@
     {#each topics as t}
       <h2 class="pt-3">{t.title}</h2>
       <div class="pl-3">
-        <!-- <p class="">{t.summary}</p> -->
+        <p class="">{t.summary}</p>
         {#each t.pubs as p}
           <div class="flex">
             <span class="ml-[5pt] mr-3 opacity-25">↳</span>

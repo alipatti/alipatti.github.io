@@ -112,4 +112,7 @@
       <span>github.com/alipatti</span>
     </a>
   </div>
+  <a href="https://github.com/alipatti/alipatti.github.io">
+    <p>Made with Svelte 5.</p>
+  </a>
 </footer>

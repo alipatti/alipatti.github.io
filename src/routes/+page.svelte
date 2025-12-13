@@ -25,8 +25,9 @@
             <p>
               I'm a predoctoral fellow for <a
                 href="https://opportunityinsights.org">Opportunity Insights</a
-              >, a group at Harvard using big data to research class mobility
-              in the United States. Previously, I studied math and statistics at
+              >, a group at Harvard that uses big data to research class
+              mobility in the United States. Previously, I studied math and
+              statistics at
               <a
                 target="_blank"
                 href="https://www.startribune.com/minnesota-winter-weather-temperature-cold-north-pole/600114153/"

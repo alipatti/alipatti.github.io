@@ -1,10 +1,10 @@
 - title: Polarization
   summary:
-    Interparty dislike is rising in the United States, but the literature is
-    divided on whether this has been accompanied by a divergence in people's
-    underlying ideology. In ongoing work, I propose a new measure of idological
-    polarization in the American public and demonstrate its increase over the
-    last several decades.
+    Interparty dislike is rising in the United States, but it's unclear whether
+    this rise has been accompanied by a divergence
+    in people's underlying ideology. In ongoing work, I propose a new measure of
+    idological polarization in the American public and demonstrate its increase
+    over the last several decades.
   pubs:
     - title: Public Ideological Polarization
       date: December 2025
@@ -13,8 +13,8 @@
 
 - title: Health Economics
   summary:
-    After college, I worked as an RA on a project using social security death
-    records and IRS tax returns to study the relationship between income and
+    Since college, I've worked as an RA on a project using social security death
+    records and IRS tax returns to study the relationship between income, race, and
     life expectancy in the United States.
   pubs:
     - title:
@@ -25,11 +25,27 @@
         Hannes Schwandt, Michael Stepner, and others
       notes: In preparation
 
+- title: Cryptography
+  summary:
+    In college, I helped develop a method for reporting abuse on private
+    messaging apps that still maintains the guarantees of end-to-end encryption.
+    I devised a way for users to keep their privacy until their messages are
+    reported many times or by many different people.
+  pubs:
+    - title: Committee Moderation on Encrypted Messaging Platforms
+      with: Nicholas Hopper
+      date: May 2023
+      arxiv: "2306.01241"
+      notes: Extended abstract at IEEE S&P
+    - title: Private Threshold Content Reporting for Encrypted Messages
+      with: Nicholas Hopper
+      notes: In preparation
+
 - title: Algorithms
   summary:
     At Carleton, I studied a generalization of the set-cover problem where—in
-    addition desirable "good" elements—the universe contains "bad" elements that
-    one actively seeks to avoid.
+    addition to desirable "good" elements—the universe contains "bad" elements
+    that one actively seeks to avoid.
   pubs:
     - title:
         Maximizing the Margin Between Desirable and Undesirable Elements in a
@@ -41,18 +57,3 @@
       arxiv: "2507.03817"
       notes: Under review
 
-- title: Cryptography
-  summary:
-    In college, I helped develop a method for reporting abuse on messaging apps
-    that still maintains the guarantees of end-to-end encryption. I devised a
-    way for users to keep their privacy until their messages are reported many
-    times or by many different people.
-  pubs:
-    - title: Committee Moderation on Encrypted Messaging Platforms
-      with: Nicholas Hopper
-      date: May 2023
-      arxiv: "2306.01241"
-      notes: Extended abstract at IEEE S&P
-    - title: Private Threshold Content Reporting for Encrypted Messages
-      with: Nicholas Hopper
-      notes: In preparation

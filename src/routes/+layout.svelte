@@ -56,8 +56,8 @@
         <a href="/" class="block md:hidden">AP</a>
       </li>
 
-      <span class="opacity-20 italic font-light">|</span>
-      <li>
+      <span class="opacity-20 italic font-light hidden lg:block">|</span>
+      <li class="hidden lg:block">
         <a href="/">home</a>
       </li>
 
@@ -97,7 +97,7 @@
 </div>
 
 <footer
-  class="bg-darkgreen/70 dark:text-lightblue/50 z-50 p-5 text-center text-sm font-light text-white/60"
+  class="bg-darkgreen/70 dark:text-lightblue/50 z-50 p-5 text-center text-sm font-light text-white/60 hidden md:block"
 >
   <div
     class="descendant-span:ml-2 mx-auto descendant-a:hover:underline mb-3 flex w-1/2 flex-wrap justify-center gap-x-3 gap-y-1"

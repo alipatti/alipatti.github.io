@@ -44,7 +44,14 @@
   const backgroud_blur_tailwind_class = $derived(
     page.url.pathname == "/" ? "blur-[5px]" : "blur-[50px]",
   );
+
+  const slug = $derived(page.url.pathname.replace(/^\//, ""));
+  const title = $derived(slug ? `${slug} | alipatti.com` : "alipatti.com");
 </script>
+
+<svelte:head>
+  <title>{title}</title>
+</svelte:head>
 
 <div
   class="relative min-h-screen flex flex-col grow text-neutral-800 dark:bg-neutral-800 dark:text-neutral-100"

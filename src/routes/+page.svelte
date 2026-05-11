@@ -41,7 +41,7 @@
               >
                 running in circles
               </a>. I often
-              <a href="code">write code</a> in my free time.
+              <a href="https://github.com/alipatti">write code</a> in my free time.
             </p>
             <p>
               If for some reason you'd like to learn more about me, you can find

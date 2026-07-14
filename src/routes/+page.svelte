@@ -23,11 +23,12 @@
 
           <div class="max-w-md space-y-5 text-left sm:text-center">
             <p>
-              I'm a predoctoral fellow for <a
-                href="https://opportunityinsights.org">Opportunity Insights</a
-              >, a group at Harvard that uses big data to research class
-              mobility in the United States. Previously, I studied math and
-              statistics at
+              I'm a PhD student in the Economics department at <a
+                href="https://www.newyorker.com/magazine/2006/06/26/what-i-learned"
+                >Princeton</a
+              >. Previously, I was a research assistant for
+              <a href="https://opportunityinsights.org">Opportunity Insights</a
+              >. Even more previously, I studied math and statistics at
               <a
                 target="_blank"
                 href="https://www.startribune.com/minnesota-winter-weather-temperature-cold-north-pole/600114153/"
@@ -37,7 +38,7 @@
               where I also spent a lot of time
               <a
                 target="_blank"
-                href="https://athletics.carleton.edu/news/2024/5/10/mens-track-and-field-2024-miac-outdoor-championships-day-1.aspx"
+                href="https://athletics.carleton.edu/sports/mens-track-and-field/roster/alistair-pattison/2636#sidearm-roster-player-bio"
               >
                 running in circles
               </a>. I often
@@ -58,13 +59,13 @@
             <span class="fa--github"></span>
             <span class="pl-2">github</span>
           </a>
-          <a
-            class="button hover:shadow hidden sm:block"
-            href="https://linkedin.com/in/alipatti"
-          >
-            <span class="fa--linkedin-square"></span>
-            <span class="pl-2">linkedin</span>
-          </a>
+          <!-- <a -->
+          <!--   class="button hover:shadow hidden sm:block" -->
+          <!--   href="https://linkedin.com/in/alipatti" -->
+          <!-- > -->
+          <!--   <span class="fa--linkedin-square"></span> -->
+          <!--   <span class="pl-2">linkedin</span> -->
+          <!-- </a> -->
           <a
             class="button hover:shadow"
             href="https://alipatti.com/cv/pattison-cv.pdf"

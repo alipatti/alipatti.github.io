@@ -26,18 +26,24 @@
               I'm an economics PhD student at <a
                 href="https://www.newyorker.com/magazine/2006/06/26/what-i-learned"
                 >Princeton</a
-              >. Before my PhD, I studied math and statistics at
+              >. Before my PhD, I spent two years as a research assistant for
+              <a href="https://opportunityinsights.org">Opportunity Insights</a
+              >. Before that, I studied math and statistics at
               <a
                 target="_blank"
                 href="https://www.startribune.com/minnesota-winter-weather-temperature-cold-north-pole/600114153/"
               >
                 Carleton College
               </a>
-              and then spent two years as a research assistant for
-              <a href="https://opportunityinsights.org">Opportunity Insights</a
+              where I also spent a lot of time <a
+                href="https://athletics.carleton.edu/news/2024/5/10/mens-track-and-field-2024-miac-outdoor-championships-day-1.aspx"
+                >running in circles</a
               >.
             </p>
-            <p>You can learn more about me at the links below.</p>
+            <p>
+              If for some reason you'd like to learn more about me, you can find
+              more <a href="/about">here</a> or at the links below.
+            </p>
 
             <div
               id="links"

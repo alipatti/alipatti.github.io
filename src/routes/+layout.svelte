@@ -68,7 +68,7 @@
         <a href="/">home</a>
       </li>
 
-      {#each [] as slug}
+      {#each ["about"] as slug}
         <span class="opacity-20 italic font-light">|</span>
         <li>
           <a href="/{slug}">{slug}</a>

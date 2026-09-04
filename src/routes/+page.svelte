@@ -41,7 +41,7 @@
                 >running in circles</a
               >.
             </p>
-            <p>You can learn more about me at the links below.</p>
+            <p>You can learn more about me <a href="/about">here</a> or at the links below.</p>
 
             <div
               id="links"

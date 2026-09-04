@@ -15,15 +15,14 @@
         and the idea of spending my life proving theorems understandable only by
         a handful of specialists. I decided to pivot to more applied work and,
         after graduating, spent two years as a research assistant for Raj Chetty
-        and the Opportunity Insights group. I quite liked doing econ research,
-        so I decided to get a PhD. I'm now a first-year student at Princeton
-        with the generous support of an NSF Graduate Research Fellowship.
+        at Opportunity Insights. I quite liked doing econ research, so I decided
+        to get a PhD. I'm now a first-year student at Princeton with the
+        generous support of an NSF Graduate Research Fellowship.
       </p>
 
       <p>
-        Within econ, I'm currently interested in labor, political economy,
-        algorithmic game theory/mechanism design, and (applied) econometrics.
-        This will likely evolve.
+        Within econ, I'm broadly interested in applied micro, political economy,
+        and econometrics. This will likely evolve.
       </p>
 
       <p>

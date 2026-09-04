@@ -1,12 +1,12 @@
 <main class="z-10">
   <section id="bio">
     <div
-      class="mx-auto flex flex-col items-center justify-start gap-5 sm:gap-10 xl:gap-5 text-center xl:min-w-[40rem] xl:max-w-6xl xl:pt-40 p-10"
+      class="mx-auto flex flex-col items-center justify-start gap-5 sm:gap-10 xl:gap-5 text-center xl:min-w-160 xl:max-w-6xl xl:pt-40 p-10"
     >
-      <span class="text-[10vw] sm:text-6xl xl:text-6xl">Alistair Pattison</span>
+      <span class="text-[10vw] sm:text-6xl">Alistair Pattison</span>
 
       <hr
-        class="mx-auto h-px hidden xl:block max-w-60 border-0 bg-neutral-700 opacity-50 dark:bg-neutral-500"
+        class="mx-auto h-px hidden xl:block max-w-60 border-0 bg-lightgreen opacity-25 dark:bg-lightgreen/80"
       />
 
       <div class="flex flex-col items-center">
@@ -14,7 +14,7 @@
           class="flex flex-col items-center gap-10 sm:gap-16 xl:gap-20 xl:flex-row"
         >
           <img
-            class="aspect-square rounded-md xl:rounded-full object-cover object-left-top shadow-md"
+            class="aspect-square rounded-md xl:rounded-full object-cover object-top-left shadow-md"
             src="headshot.jpeg"
             alt="headshot"
             height={280}
@@ -26,24 +26,22 @@
               I'm an economics PhD student at <a
                 href="https://www.newyorker.com/magazine/2006/06/26/what-i-learned"
                 >Princeton</a
-              >. Before my PhD, I spent two years as a research assistant for
-              <a href="https://opportunityinsights.org">Opportunity Insights</a
-              >. Before that, I studied math and statistics at
+              >. Before my PhD, I worked as a research assistant for
+              <a href="https://opportunityinsights.org">Opportunity Insights</a>
+              following four wonderful years at
               <a
                 target="_blank"
                 href="https://www.startribune.com/minnesota-winter-weather-temperature-cold-north-pole/600114153/"
               >
                 Carleton College
               </a>
-              where I also spent a lot of time <a
+              where I studied math and statistics and spent a lot of time
+              <a
                 href="https://athletics.carleton.edu/news/2024/5/10/mens-track-and-field-2024-miac-outdoor-championships-day-1.aspx"
                 >running in circles</a
               >.
             </p>
-            <p>
-              If for some reason you'd like to learn more about me, you can find
-              more <a href="/about">here</a> or at the links below.
-            </p>
+            <p>You can learn more about me at the links below.</p>
 
             <div
               id="links"

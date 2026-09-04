@@ -1,6 +1,6 @@
 <main class="z-10">
   <section id="about">
-    <div class="mx-auto max-w-xl space-y-5 p-15 text-justify sm:text-left">
+    <div class="mx-auto max-w-2xl lg:max-w-3xl p-15 text-justify">
       <h1 class="mb-3 tracking-wider">About</h1>
 
       <p>
@@ -12,13 +12,12 @@
 
       <p>
         In my final years of undergrad, I became disillusioned with pure math
-        and the idea of spending my life proving theorems <a
-          href="https://ncatlab.org/nlab/show/abelian+sheaf">understandable</a
-        > only by a handful of specialists. I decided to pivot to more applied work
-        and, after graduating, moved to Massachusets to work for Raj Chetty at Opportunity
-        Insights. I quite liked doing econ research, so I decided to get a PhD. I'm
-        now a student at Princeton with the generous support of an NSF Graduate Research
-        Fellowship.
+        and the idea of spending my life proving theorems understandable only by
+        a handful of specialists. I decided to pivot to more applied work and,
+        after graduating, spent two years as a research assistant for Raj Chetty
+        and the Opportunity Insights group. I quite liked doing econ research,
+        so I decided to get a PhD. I'm now a first-year student at Princeton
+        with the generous support of an NSF Graduate Research Fellowship.
       </p>
 
       <p>
@@ -29,14 +28,19 @@
 
       <p>
         Outside my work, I like pickup soccer, bikes (non-electric), writing
-        code by hand, cheering for <a
+        code (sometimes even <a
+          href="https://x.com/sama/status/2033935276079510011">by hand</a
+        >!), cheering for
+        <a
           href="https://en.wikipedia.org/wiki/List_of_all-time_NBA_win–loss_records#Active_franchises"
           >perennially</a
         >
         <a
           href="https://www.nytimes.com/athletic/7092975/2026/03/06/tottenham-fans-relegation/"
           >mediocre</a
-        > sports teams, reading The Atlantic, splitting the G, and <a
+        >
+        sports teams, reading The Atlantic, splitting the G, and
+        <a
           href="https://www.sundaynobody.com/artwork/p/hot-dog-water-ice-sculpture-unrefrigerated"
           >high-effort jokes</a
         > with little payoff.
